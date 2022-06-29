@@ -11,7 +11,7 @@
         <link rel="canonical" href="https://wdh99.github.io/git%E6%95%99%E7%A8%8B/">
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.15">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.8">
     
     
       
@@ -19,11 +19,12 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.c382b1dc.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.1d29e8d0.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.cc9b2e1e.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.cbb835fc.min.css">
         
+      
       
     
     
@@ -67,7 +68,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#pull-push" class="md-skip">
+        <a href="#ssl" class="md-skip">
           跳转至
         </a>
       
@@ -273,6 +274,20 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#ssl" class="md-nav__link">
+    使用SSL免输入账号密码
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#httpsssl" class="md-nav__link">
+    从现有https切换为ssl连接
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#pull-push" class="md-nav__link">
     基本拉取推送pull push
   </a>
@@ -280,50 +295,37 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#githubmastermain" class="md-nav__link">
-    github中master改为main
-  </a>
-  
-    <nav class="md-nav" aria-label="github中master改为main">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
     克隆分支以及指定文件夹名字
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     合并
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#_3" class="md-nav__link">
     配置
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#pullpush" class="md-nav__link">
     pull,push特殊情况
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#_4" class="md-nav__link">
     其他
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -2107,7 +2109,7 @@
   
     <li class="md-nav__item">
       <a href="../%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA/mkdocs/%E5%A6%82%E4%BD%95%E5%81%9A/" class="md-nav__link">
-        如何用搭建静态网站,显示md文章
+        如何做
       </a>
     </li>
   
@@ -2228,6 +2230,20 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#ssl" class="md-nav__link">
+    使用SSL免输入账号密码
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#httpsssl" class="md-nav__link">
+    从现有https切换为ssl连接
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#pull-push" class="md-nav__link">
     基本拉取推送pull push
   </a>
@@ -2235,50 +2251,37 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#githubmastermain" class="md-nav__link">
-    github中master改为main
-  </a>
-  
-    <nav class="md-nav" aria-label="github中master改为main">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
     克隆分支以及指定文件夹名字
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     合并
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#_3" class="md-nav__link">
     配置
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#pullpush" class="md-nav__link">
     pull,push特殊情况
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#_4" class="md-nav__link">
     其他
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -2297,10 +2300,20 @@
                 
 
 
-<hr />
+  <h1>Git教程</h1>
+
+<h2 id="ssl">使用SSL免输入账号密码<a class="headerlink" href="#ssl" title="Permanent link">&para;</a></h2>
+<p>教程https://docs.github.com/cn/authentication/connecting-to-github-with-ssh/about-ssh</p>
+<div class="highlight"><pre><span></span><code>ssh-keygen -t ed25519 -C &quot;your_email@example.com&quot;
+到C:\Users\用户名\.ssh目录下查看xxx.pub的内容
+将其内容添加到下图的key处，title随便起个给你区分的名字
+然后勾选下面的Allow write access 
+</code></pre></div>
+<p><img alt="image-20220630025155935" src="C:\Users\wu\AppData\Roaming\Typora\typora-user-images\image-20220630025155935.png" /></p>
+<h2 id="httpsssl">从现有https切换为ssl连接<a class="headerlink" href="#httpsssl" title="Permanent link">&para;</a></h2>
+<p><a href="https://docs.github.com/en/get-started/getting-started-with-git/managing-remote-repositories#switching-remote-urls-from-https-to-ssh">https://docs.github.com/en/get-started/getting-started-with-git/managing-remote-repositories#switching-remote-urls-from-https-to-ssh</a></p>
 <h2 id="pull-push">基本拉取推送pull push<a class="headerlink" href="#pull-push" title="Permanent link">&para;</a></h2>
-<p>教程 <a href="https://docs.github.com/en/get-started/getting-started-with-git/managing-remote-repositories#switching-remote-urls-from-https-to-ssh">https://docs.github.com/en/get-started/getting-started-with-git/managing-remote-repositories#switching-remote-urls-from-https-to-ssh</a></p>
-<h1 id="githubmastermain">github中master改为main<a class="headerlink" href="#githubmastermain" title="Permanent link">&para;</a></h1>
+<p>github中master改为main</p>
 <div class="highlight"><pre><span></span><code>git init
 git remote add origin https://gitee.com/xxx/xxx.git <span class="c1">#orgin是任意取的一个名字</span>
 git pull origin master <span class="c1">#master是这个仓库的分支(主分支)</span>
@@ -2391,17 +2404,26 @@ $ git reset --hard 版本号 <span class="c1"># $ git reset --hard cf69d7e</span
   
 
             </article>
+            
           </div>
         </div>
         
       </main>
       
-        <footer class="md-footer">
-  
-    <nav class="md-footer__inner md-grid" aria-label="页脚">
-      
         
-        <a href=".." class="md-footer__link md-footer__link--prev" aria-label="上一页: 欢迎来到CodeInFall" rel="prev">
+
+<footer class="md-footer">
+  
+    <nav
+      class="md-footer__inner md-grid"
+      aria-label="页脚"
+    >
+      
+        <a
+          href=".."
+          class="md-footer__link md-footer__link--prev"
+          rel="prev"
+        >
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -2416,8 +2438,11 @@ $ git reset --hard 版本号 <span class="c1"># $ git reset --hard cf69d7e</span
         </a>
       
       
-        
-        <a href="../AutoHotKey%E4%B8%8EAutoIt/AutoHotkey-%E8%87%AA%E5%8A%A8%E5%9C%A8%E6%96%87%E6%9C%AC%E7%BC%96%E8%BE%91%E5%99%A8%E5%8A%A0%E4%B8%8A%E6%8C%87%E5%AE%9A%E5%86%85%E5%AE%B9/" class="md-footer__link md-footer__link--next" aria-label="下一页: AutoHotkey 自动在文本编辑器加上指定内容" rel="next">
+        <a
+          href="../AutoHotKey%E4%B8%8EAutoIt/AutoHotkey-%E8%87%AA%E5%8A%A8%E5%9C%A8%E6%96%87%E6%9C%AC%E7%BC%96%E8%BE%91%E5%99%A8%E5%8A%A0%E4%B8%8A%E6%8C%87%E5%AE%9A%E5%86%85%E5%AE%B9/"
+          class="md-footer__link md-footer__link--next"
+          rel="next"
+        >
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
@@ -2435,14 +2460,22 @@ $ git reset --hard 版本号 <span class="c1"># $ git reset --hard cf69d7e</span
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
-      <div class="md-copyright">
-  
-    <div class="md-copyright__highlight">
-      WuDingHuan
-    </div>
-  
-  
-    联系: meansvv@163.com
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            WuDingHuan
+          </div>
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        with emoji by
+        <a href="https://github.com/twitter/twemoji" target="_blank" rel="noopener">
+          Twemoji
+        </a>
+      </div>
+      <div class="md-social">
   
 </div>
     </div>
@@ -2453,12 +2486,10 @@ $ git reset --hard 版本号 <span class="c1"># $ git reset --hard cf69d7e</span
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.2a1c317c.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.config.lang": "ja", "search.config.pipeline": "trimmer, stemmer", "search.config.separator": "[\\s\\-\uff0c\u3002]+", "search.placeholder": "\u641c\u7d22", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version.title": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.b97dbffb.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.config.lang": "ja", "search.config.pipeline": "trimmer, stemmer", "search.config.separator": "[\\s\\-\uff0c\u3002]+", "search.placeholder": "\u641c\u7d22", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version.title": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.a6c66575.min.js"></script>
-      
-        <script src="../js/baidu-tongji.js"></script>
+      <script src="../assets/javascripts/bundle.0238f547.min.js"></script>
       
         <script src="https://unpkg.com/mermaid@8.8.4/dist/mermaid.min.js"></script>
       

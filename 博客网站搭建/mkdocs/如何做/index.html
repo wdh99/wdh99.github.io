@@ -11,19 +11,20 @@
         <link rel="canonical" href="https://wdh99.github.io/%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA/mkdocs/%E5%A6%82%E4%BD%95%E5%81%9A/">
       
       <link rel="icon" href="../../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.15">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.8">
     
     
       
-        <title>如何用搭建静态网站,显示md文章 - CodeInFall</title>
+        <title>如何做 - CodeInFall</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.c382b1dc.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.1d29e8d0.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.cc9b2e1e.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.cbb835fc.min.css">
         
+      
       
     
     
@@ -67,7 +68,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#md" class="md-skip">
+        <a href="#_1" class="md-skip">
           跳转至
         </a>
       
@@ -109,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              如何用搭建静态网站,显示md文章
+              如何做
             
           </span>
         </div>
@@ -2031,16 +2032,14 @@
       <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
       
       
-        
-      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          如何用搭建静态网站,显示md文章
+          如何做
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        如何用搭建静态网站,显示md文章
+        如何做
       </a>
       
         
@@ -2048,8 +2047,6 @@
 <nav class="md-nav md-nav--secondary" aria-label="目录">
   
   
-  
-    
   
   
     <label class="md-nav__title" for="__toc">
@@ -2069,6 +2066,33 @@
   <a href="#_2" class="md-nav__link">
     使用主题
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mkdocs-material" class="md-nav__link">
+    以mkdocs-material为例的配置
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    错误解决
+  </a>
+  
+    <nav class="md-nav" aria-label="错误解决">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bundlea6c66575minjs" class="md-nav__link">
+    找不到bundle.a6c66575.min.js
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -2187,8 +2211,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -2210,6 +2232,33 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#mkdocs-material" class="md-nav__link">
+    以mkdocs-material为例的配置
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    错误解决
+  </a>
+  
+    <nav class="md-nav" aria-label="错误解决">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bundlea6c66575minjs" class="md-nav__link">
+    找不到bundle.a6c66575.min.js
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -2225,12 +2274,17 @@
                 
 
 
-<h1 id="md">如何用搭建静态网站,显示md文章<a class="headerlink" href="#md" title="Permanent link">&para;</a></h1>
+  <h1>如何做</h1>
+
 <h2 id="_1">开始<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
 <ul>
 <li>安装mkdocs</li>
 </ul>
-<p>pip install mkdocs</p>
+<div class="highlight"><pre><span></span><code>pip install mkdocs
+</code></pre></div>
+<p>或者安装mkdocs-material，一步到位（推荐）</p>
+<div class="highlight"><pre><span></span><code>pip install mkdocs-material
+</code></pre></div>
 <ul>
 <li>创建网站目录</li>
 </ul>
@@ -2253,22 +2307,116 @@ theme:
   name: material
 </code></pre></div>
 <p>material mkdocs readthedocs是自带主题, 第三方主题可以安装这个<code>pip install mkdocs-bootswatch</code>,然后可以在D:\Users\你的用户名\AppData\Local\Programs\Python\Python版本\Lib\site-packages中出现mkdocs-bootswatch一个文件夹, 每一个文件夹名字都是一个主题名字, 写到mkdocs.yaml就可以更换主题了.</p>
+<h2 id="mkdocs-material">以mkdocs-material为例的配置<a class="headerlink" href="#mkdocs-material" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><span class="nt">site_name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">CodeInFall</span><span class="w"></span>
+<span class="c1"># site_url: https://wdh99.github.io/</span><span class="w"></span>
+<span class="nt">copyright</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">WuDingHuan</span><span class="w"></span>
+<span class="c1">#pymdownx-material 的文档:https://pypi.org/project/mkdocs-pymdownx-material-extras/</span><span class="w"></span>
+<span class="nt">theme</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">material</span><span class="w"></span>
+<span class="w">  </span><span class="nt">language</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;zh&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="c1"># palette:</span><span class="w"></span>
+<span class="w">    </span><span class="c1"># scheme: dracula # This is how to enables the Dracula theme for dark. For light, it will use default Material with some tweaks.</span><span class="w"></span>
+<span class="w">    </span><span class="c1"># primary: amber # Primary colors</span><span class="w"></span>
+<span class="w">    </span><span class="c1"># accent: amber # accent color</span><span class="w"></span>
+<span class="w">  </span><span class="nt">custom_dir</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">template/</span><span class="w"> </span><span class="c1"># 自定义模板，修改某些通用内容时用到</span><span class="w"></span>
+<span class="w">  </span><span class="nt">feature</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="nt">tabs</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span><span class="w">  </span><span class="c1"># 横向导航(true和false没看出变化)</span><span class="w"></span>
+
+<span class="nt">watch</span><span class="p">:</span><span class="w"> </span><span class="c1"># 指定监视变化的内容</span><span class="w"></span>
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">docs</span><span class="w"></span>
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mkdocs.yml</span><span class="w"></span>
+
+<span class="nt">plugins</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">search</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mkdocs_pymdownx_material_extras</span><span class="w"> </span><span class="c1"># 深色与浅色主题切换</span><span class="w"></span>
+
+<span class="nt">markdown_extensions</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">admonition</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">pymdownx.superfences</span><span class="p">:</span><span class="w"></span>
+<span class="w">      </span><span class="nt">custom_fences</span><span class="p">:</span><span class="w"></span>
+<span class="w">        </span><span class="c1"># Mermaid diagrams</span><span class="w"></span>
+<span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">diagram</span><span class="w"></span>
+<span class="w">          </span><span class="nt">class</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">diagram</span><span class="w"></span>
+<span class="w">          </span><span class="nt">format</span><span class="p">:</span><span class="w"> </span><span class="kt">!!python/name:pymdownx.superfences.fence_code_format</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">footnotes</span><span class="w">  </span><span class="c1"># 脚注</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">meta</span><span class="w">  </span><span class="c1"># 定义元数据，通过文章上下文控制，如disqus</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pymdownx.caret</span><span class="w">  </span><span class="c1"># 下划线上标</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pymdownx.tilde</span><span class="w">  </span><span class="c1"># 删除线下标</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pymdownx.critic</span><span class="w">  </span><span class="c1"># 增加删除修改高亮注释，可修饰行内或段落</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pymdownx.details</span><span class="w">  </span><span class="c1"># 提示块可折叠</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pymdownx.inlinehilite</span><span class="w">  </span><span class="c1"># 行内代码高亮</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pymdownx.mark</span><span class="w">  </span><span class="c1"># 文本高亮</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pymdownx.smartsymbols</span><span class="w">  </span><span class="c1"># 符号转换</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pymdownx.superfences</span><span class="w">  </span><span class="c1"># 代码嵌套在列表里</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pymdownx.betterem</span><span class="w"></span>
+<span class="w">  </span><span class="c1">#- pymdownx.betterem:  # 对加粗和斜体更好的检测</span><span class="w"></span>
+<span class="w">  </span><span class="c1">#    smart_enable: all</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">codehilite</span><span class="p">:</span><span class="w">    </span><span class="c1"># 代码高亮，显示行号</span><span class="w"></span>
+<span class="w">      </span><span class="nt">guess_lang</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">false</span><span class="w"></span>
+<span class="w">      </span><span class="nt">linenums</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">toc</span><span class="p">:</span><span class="w">  </span><span class="c1"># 锚点</span><span class="w"></span>
+<span class="w">      </span><span class="nt">permalink</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pymdownx.arithmatex</span><span class="w">  </span><span class="c1"># 数学公式</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">pymdownx.emoji</span><span class="p">:</span><span class="w">  </span><span class="c1"># 表情</span><span class="w"></span>
+<span class="w">     </span><span class="nt">emoji_generator</span><span class="p">:</span><span class="w"> </span><span class="kt">!!python/name:pymdownx.emoji.to_svg</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pymdownx.magiclink</span><span class="w">  </span><span class="c1"># 自动识别超链接</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">pymdownx.tasklist</span><span class="p">:</span><span class="w">  </span><span class="c1"># 复选框checklist</span><span class="w"></span>
+<span class="w">      </span><span class="nt">custom_checkbox</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span><span class="w"></span>
+
+<span class="nt">extra_javascript</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&#39;js/baidu-tongji.js&#39;</span><span class="w"> </span><span class="c1"># 自定义个每个页面加入百度统计</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://unpkg.com/mermaid@8.8.4/dist/mermaid.min.js</span><span class="w"></span>
+</code></pre></div>
+<h2 id="_3">错误解决<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<h3 id="bundlea6c66575minjs">找不到bundle.a6c66575.min.js<a class="headerlink" href="#bundlea6c66575minjs" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>WARNING  -  <span class="o">[</span><span class="m">03</span>:43:15<span class="o">]</span> <span class="s2">&quot;GET /assets/javascripts/bundle.a6c66575.min.js HTTP/1.1&quot;</span> code <span class="m">404</span>
+WARNING  -  <span class="o">[</span><span class="m">03</span>:43:15<span class="o">]</span> <span class="s2">&quot;GET /assets/stylesheets/main.c382b1dc.min.css HTTP/1.1&quot;</span> code <span class="m">404</span>
+WARNING  -  <span class="o">[</span><span class="m">03</span>:43:15<span class="o">]</span> <span class="s2">&quot;GET /assets/stylesheets/palette.cc9b2e1e.min.css HTTP/1.1&quot;</span> code <span class="m">404</span>
+WARNING  -  <span class="o">[</span><span class="m">03</span>:43:15<span class="o">]</span> <span class="s2">&quot;GET /assets/javascripts/bundle.a6c66575.min.js HTTP/1.1&quot;</span> code <span class="m">404</span>
+</code></pre></div>
+<blockquote>
+<p>背景：项目是原本存在的，新安装了python，mkdocs，mkdocs-material</p>
+</blockquote>
+<p>mkdocs.yaml文件内容有</p>
+<div class="highlight"><pre><span></span><code>theme:
+  ...
+  custom_dir: template/
+</code></pre></div>
+<p>目录结构</p>
+<div class="highlight"><pre><span></span><code>docs
+template
+    base.html...
+</code></pre></div>
+<p>出现上面的原因是自定义了template，里面的base.html默认使用的javascript、css文件，应该是安装mkdocs-material时自动生成的名字，当重新安装时，名字就变了。</p>
+<p>解决方法：</p>
+<div class="highlight"><pre><span></span><code>删除template/base.html
+</code></pre></div>
 
               
   
 
             </article>
+            
           </div>
         </div>
         
       </main>
       
-        <footer class="md-footer">
-  
-    <nav class="md-footer__inner md-grid" aria-label="页脚">
-      
         
-        <a href="../../jekyll/%E7%AC%AC%E4%B8%80%E6%AC%A1%E4%BD%BF%E7%94%A8jekyll%E7%9A%84%E9%85%8D%E7%BD%AE/" class="md-footer__link md-footer__link--prev" aria-label="上一页: 第一次使用jekyll的配置" rel="prev">
+
+<footer class="md-footer">
+  
+    <nav
+      class="md-footer__inner md-grid"
+      aria-label="页脚"
+    >
+      
+        <a
+          href="../../jekyll/%E7%AC%AC%E4%B8%80%E6%AC%A1%E4%BD%BF%E7%94%A8jekyll%E7%9A%84%E9%85%8D%E7%BD%AE/"
+          class="md-footer__link md-footer__link--prev"
+          rel="prev"
+        >
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -2283,8 +2431,11 @@ theme:
         </a>
       
       
-        
-        <a href="../../../%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90/PCB%E8%BD%AF%E4%BB%B6/" class="md-footer__link md-footer__link--next" aria-label="下一页: PCB软件" rel="next">
+        <a
+          href="../../../%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90/PCB%E8%BD%AF%E4%BB%B6/"
+          class="md-footer__link md-footer__link--next"
+          rel="next"
+        >
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
@@ -2302,14 +2453,22 @@ theme:
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
-      <div class="md-copyright">
-  
-    <div class="md-copyright__highlight">
-      WuDingHuan
-    </div>
-  
-  
-    联系: meansvv@163.com
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            WuDingHuan
+          </div>
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        with emoji by
+        <a href="https://github.com/twitter/twemoji" target="_blank" rel="noopener">
+          Twemoji
+        </a>
+      </div>
+      <div class="md-social">
   
 </div>
     </div>
@@ -2320,12 +2479,10 @@ theme:
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.2a1c317c.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.config.lang": "ja", "search.config.pipeline": "trimmer, stemmer", "search.config.separator": "[\\s\\-\uff0c\u3002]+", "search.placeholder": "\u641c\u7d22", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version.title": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.b97dbffb.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.config.lang": "ja", "search.config.pipeline": "trimmer, stemmer", "search.config.separator": "[\\s\\-\uff0c\u3002]+", "search.placeholder": "\u641c\u7d22", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version.title": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.a6c66575.min.js"></script>
-      
-        <script src="../../../js/baidu-tongji.js"></script>
+      <script src="../../../assets/javascripts/bundle.0238f547.min.js"></script>
       
         <script src="https://unpkg.com/mermaid@8.8.4/dist/mermaid.min.js"></script>
       
