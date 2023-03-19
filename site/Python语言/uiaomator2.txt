@@ -1,0 +1,17 @@
+INSTALL 
+小米手机安装方法:
+
+
+CONNECT
+
+D:\platform-tools>adb devices
+List of devices attached
+62f65841        device
+
+>>>import uiautomator2 as u2
+>>> d= u2.connect_usb('62f65841')
+>>> d
+<uiautomator2.Device object at 0x0000000004955708>
+>>> d.info
+{'currentPackageName': 'com.github.uiautomator', 'displayHeight': 1920, 'displayRotation': 0, 'displaySizeDpX': 393, 'displaySizeDpY': 698, 'displayWidth': 1080, 'productName': 'helium', 'screenOn': True, 'sdkInt': 24, 'naturalOrientation': True}
+>>> 

@@ -10,27 +10,33 @@
       
         <link rel="canonical" href="https://wdh99.github.io/Python%E8%AF%AD%E8%A8%80/Django/%E8%A7%86%E5%9B%BE/">
       
+      
+        <link rel="prev" href="../%E6%A8%A1%E6%9D%BF/">
+      
+      
+        <link rel="next" href="../%E9%97%AE%E9%A2%98/">
+      
       <link rel="icon" href="../../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.3.1, mkdocs-material-8.3.9">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.3">
     
     
       
-        <title>视图 - WDH99</title>
+        <title>[锁] 视图 - WDH99</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.1d29e8d0.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.c4a75a56.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.cbb835fc.min.css">
-        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.a0c5b2b5.min.css">
       
       
+
     
     
 
-<script src="../../../assets/pymdownx-extras/material-extra-theme-7c147bb7.js" type="text/javascript"></script>
-<script src="../../../assets/pymdownx-extras/material-extra-3rdparty-f4ebda09.js" type="text/javascript"></script>
+<script src="../../../assets/pymdownx-extras/material-extra-theme-8d50d708.js" type="text/javascript"></script>
+<script src="../../../assets/pymdownx-extras/material-extra-3rdparty-a81e7739.js" type="text/javascript"></script>
 
     
       
@@ -42,12 +48,13 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/pymdownx-extras/extra-2d846d3021.css">
+      <link rel="stylesheet" href="../../../assets/pymdownx-extras/extra-3531de4046.css">
     
-    <script>__md_scope=new URL("../../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
+    
     
     
   </head>
@@ -58,7 +65,7 @@
     
     
     
-    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent="">
   
     
     
@@ -84,7 +91,7 @@
 <header class="md-header" data-md-component="header">
   <nav
     class="md-header__inner md-grid"
-    aria-label="页眉"
+    aria-label=""
   >
     <a
       href="https://wdh99.github.io/"
@@ -110,7 +117,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              视图
+              [锁] 视图
             
           </span>
         </div>
@@ -167,7 +174,7 @@
       </label>
       <nav class="md-search__options" aria-label="查找">
         
-        <button type="reset" class="md-search__icon md-icon" aria-label="清空当前内容" tabindex="-1">
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
         </button>
       </nav>
@@ -179,7 +186,7 @@
           <div class="md-search-result__meta">
             正在初始化搜索引擎
           </div>
-          <ol class="md-search-result__list"></ol>
+          <ol class="md-search-result__list" role="presentation"></ol>
         </div>
       </div>
     </div>
@@ -191,7 +198,7 @@
         <a href="https://github.com/wdh99/" title="前往仓库" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
   </div>
   <div class="md-source__repository">
     GitHub
@@ -235,7 +242,7 @@
       <a href="https://github.com/wdh99/" title="前往仓库" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
   </div>
   <div class="md-source__repository">
     GitHub
@@ -267,22 +274,68 @@
   
   
   
+    <li class="md-nav__item">
+      <a href="../../../Git%E4%B8%8EGithub/" class="md-nav__link">
+        Git与Github
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../NodeJS/" class="md-nav__link">
+        NodeJS
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E5%90%84%E7%A7%8D%E6%8A%98%E8%85%BE/" class="md-nav__link">
+        各种折腾
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
     
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
       
       
       
-      
-        <label class="md-nav__link" for="__nav_2">
+        <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
           AutoHotKey与AutoIt
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="AutoHotKey与AutoIt" data-md-level="1">
-        <label class="md-nav__title" for="__nav_2">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_5">
           <span class="md-nav__icon md-icon"></span>
           AutoHotKey与AutoIt
         </label>
@@ -333,18 +386,19 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
       
       
       
-      
-        <label class="md-nav__link" for="__nav_3">
+        <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
           C++QT
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="C++QT" data-md-level="1">
-        <label class="md-nav__title" for="__nav_3">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_6">
           <span class="md-nav__icon md-icon"></span>
           C++QT
         </label>
@@ -381,18 +435,19 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
       
       
       
-      
-        <label class="md-nav__link" for="__nav_4">
+        <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
           C与C++语言
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="C与C++语言" data-md-level="1">
-        <label class="md-nav__title" for="__nav_4">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_7">
           <span class="md-nav__icon md-icon"></span>
           C与C++语言
         </label>
@@ -471,18 +526,19 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
       
       
       
-      
-        <label class="md-nav__link" for="__nav_5">
+        <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
           Linux系统
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="Linux系统" data-md-level="1">
-        <label class="md-nav__title" for="__nav_5">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_8">
           <span class="md-nav__icon md-icon"></span>
           Linux系统
         </label>
@@ -523,7 +579,7 @@
   
     <li class="md-nav__item">
       <a href="../../../Linux%E7%B3%BB%E7%BB%9F/linux%E5%A4%8D%E5%88%B6windows%E7%9A%84%E6%96%87%E4%BB%B6/" class="md-nav__link">
-        Linux复制windows的文件
+        [锁] Linux复制windows的文件
       </a>
     </li>
   
@@ -537,7 +593,7 @@
   
     <li class="md-nav__item">
       <a href="../../../Linux%E7%B3%BB%E7%BB%9F/linux%E7%89%88%E7%9A%84WPS-Office%E7%BC%BA%E5%A4%B1windings%E7%AD%89%E5%AD%97%E4%BD%93/" class="md-nav__link">
-        linux版的WPS Office缺失windings等字体
+        [锁] linux版的WPS Office缺失windings等字体
       </a>
     </li>
   
@@ -565,7 +621,7 @@
   
     <li class="md-nav__item">
       <a href="../../../Linux%E7%B3%BB%E7%BB%9F/shell%E4%B8%AD%E4%B8%8B%E8%BD%BD%E7%BC%96%E5%8F%B7%E4%B8%8D%E5%90%8C%E7%9A%84%E9%93%BE%E6%8E%A5/" class="md-nav__link">
-        Shell中下载编号不同的链接
+        [锁] Shell中下载编号不同的链接
       </a>
     </li>
   
@@ -579,7 +635,7 @@
   
     <li class="md-nav__item">
       <a href="../../../Linux%E7%B3%BB%E7%BB%9F/shell%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" class="md-nav__link">
-        Shell常用命令
+        [锁] Shell常用命令
       </a>
     </li>
   
@@ -593,7 +649,7 @@
   
     <li class="md-nav__item">
       <a href="../../../Linux%E7%B3%BB%E7%BB%9F/wifi/" class="md-nav__link">
-        Wifi
+        [锁] Wifi
       </a>
     </li>
   
@@ -663,7 +719,7 @@
   
     <li class="md-nav__item">
       <a href="../../../Linux%E7%B3%BB%E7%BB%9F/%E6%81%A2%E5%A4%8Drm%E5%88%A0%E9%99%A4%E7%9A%84%E6%96%87%E4%BB%B6/" class="md-nav__link">
-        恢复rm删除的文件
+        [锁] 恢复rm删除的文件
       </a>
     </li>
   
@@ -705,7 +761,7 @@
   
     <li class="md-nav__item">
       <a href="../../../Linux%E7%B3%BB%E7%BB%9F/%E8%87%AA%E5%B8%A6%E7%9A%84IDLE%E6%89%93%E4%B8%8D%E5%BC%80%EF%BC%8Ctkinter%E4%B9%9F%E6%97%A0%E6%B3%95%E5%AF%BC%E5%85%A5/" class="md-nav__link">
-        自带的IDLE打不开，tkinter也无法导入
+        [锁] 自带的IDLE打不开，tkinter也无法导入
       </a>
     </li>
   
@@ -735,18 +791,19 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_18" type="checkbox" id="__nav_5_18" >
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_18" >
       
       
       
-      
-        <label class="md-nav__link" for="__nav_5_18">
+        <label class="md-nav__link" for="__nav_8_18" id="__nav_8_18_label" tabindex="0">
           ArcoLinux
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="ArcoLinux" data-md-level="2">
-        <label class="md-nav__title" for="__nav_5_18">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_18_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_8_18">
           <span class="md-nav__icon md-icon"></span>
           ArcoLinux
         </label>
@@ -758,8 +815,22 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Linux%E7%B3%BB%E7%BB%9F/ArcoLinux/%E5%AE%89%E5%85%A8KDE-Plasma%E6%A1%8C%E9%9D%A2%E7%8E%AF%E5%A2%83/" class="md-nav__link">
-        安全KDE Plasma桌面环境
+      <a href="../../../Linux%E7%B3%BB%E7%BB%9F/ArcoLinux/use%20tip/" class="md-nav__link">
+        Use tip
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Linux%E7%B3%BB%E7%BB%9F/ArcoLinux/%E5%AE%89%E8%A3%85KDE-Plasma%E6%A1%8C%E9%9D%A2%E7%8E%AF%E5%A2%83/" class="md-nav__link">
+        安装KDE Plasma桌面环境
       </a>
     </li>
   
@@ -790,18 +861,19 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
       
       
       
-      
-        <label class="md-nav__link" for="__nav_6">
+        <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
           MySQL数据库
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="MySQL数据库" data-md-level="1">
-        <label class="md-nav__title" for="__nav_6">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_9">
           <span class="md-nav__icon md-icon"></span>
           MySQL数据库
         </label>
@@ -814,7 +886,7 @@
   
     <li class="md-nav__item">
       <a href="../../../MySQL%E6%95%B0%E6%8D%AE%E5%BA%93/MYSQL%E7%AC%94%E8%AE%B0/" class="md-nav__link">
-        MYSQL笔记
+        [锁] MYSQL笔记
       </a>
     </li>
   
@@ -842,7 +914,7 @@
   
     <li class="md-nav__item">
       <a href="../../../MySQL%E6%95%B0%E6%8D%AE%E5%BA%93/mysql%E6%95%B0%E6%8D%AE%E5%BA%93/" class="md-nav__link">
-        Mysql数据库
+        [锁] Mysql数据库
       </a>
     </li>
   
@@ -882,18 +954,19 @@
     <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" checked>
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" checked>
       
       
       
-      
-        <label class="md-nav__link" for="__nav_7">
+        <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
           Python语言
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="Python语言" data-md-level="1">
-        <label class="md-nav__title" for="__nav_7">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="true">
+        <label class="md-nav__title" for="__nav_10">
           <span class="md-nav__icon md-icon"></span>
           Python语言
         </label>
@@ -905,8 +978,64 @@
   
   
     <li class="md-nav__item">
+      <a href="../../MongoDB/" class="md-nav__link">
+        MongoDB
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../PyCharm/" class="md-nav__link">
-        PyCharm
+        [锁] PyCharm
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Qt/" class="md-nav__link">
+        Qt
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Selenium/" class="md-nav__link">
+        [锁] Selenium
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Tkinter/" class="md-nav__link">
+        [锁] Tkinter
       </a>
     </li>
   
@@ -920,7 +1049,7 @@
   
     <li class="md-nav__item">
       <a href="../../css%E4%B8%8Expath%E8%AF%AD%E6%B3%95/" class="md-nav__link">
-        Css与xpath语法
+        [锁] Css与xpath语法
       </a>
     </li>
   
@@ -976,7 +1105,7 @@
   
     <li class="md-nav__item">
       <a href="../../python%E7%AC%94%E8%AE%B0/" class="md-nav__link">
-        Python笔记
+        [锁] Python笔记
       </a>
     </li>
   
@@ -990,7 +1119,7 @@
   
     <li class="md-nav__item">
       <a href="../../python%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83venv%E4%B8%8Eflask%E8%B7%AF%E5%BE%84%E9%97%AE%E9%A2%98/" class="md-nav__link">
-        Python虚拟环境venv与flask路径问题
+        [锁] Python虚拟环境venv与flask路径问题
       </a>
     </li>
   
@@ -1004,7 +1133,7 @@
   
     <li class="md-nav__item">
       <a href="../../python%E8%B0%83%E7%94%A8windows%20api%E8%8E%B7%E5%8F%96%E7%94%B5%E6%B1%A0%E4%BF%A1%E6%81%AF/" class="md-nav__link">
-        Python调用windows api获取电池信息
+        [锁] Python调用windows api获取电池信息
       </a>
     </li>
   
@@ -1018,7 +1147,7 @@
   
     <li class="md-nav__item">
       <a href="../../pywinauto/" class="md-nav__link">
-        Pywinauto
+        [锁] Pywinauto
       </a>
     </li>
   
@@ -1032,7 +1161,7 @@
   
     <li class="md-nav__item">
       <a href="../../requests/" class="md-nav__link">
-        Requests
+        [锁] Requests
       </a>
     </li>
   
@@ -1046,7 +1175,7 @@
   
     <li class="md-nav__item">
       <a href="../../selenium%E7%88%AC%E8%99%AB%E7%AC%94%E8%AE%B0/" class="md-nav__link">
-        Selenium爬虫笔记
+        [锁] Selenium爬虫笔记
       </a>
     </li>
   
@@ -1073,8 +1202,36 @@
   
   
     <li class="md-nav__item">
+      <a href="../../uiautomator2/" class="md-nav__link">
+        Uiautomator2
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../xpath%E8%AF%AD%E6%B3%95/" class="md-nav__link">
-        Xpath语法
+        [锁] Xpath语法
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E4%B8%8D%E6%98%8E%E7%99%BD%E7%9A%84%E7%9F%A5%E8%AF%86%E7%82%B9/" class="md-nav__link">
+        不明白的知识点
       </a>
     </li>
   
@@ -1088,7 +1245,7 @@
   
     <li class="md-nav__item">
       <a href="../../%E6%80%8E%E6%A0%B7%E9%80%92%E5%BD%92%E5%88%A0%E9%99%A4%E6%96%87%E4%BB%B6%E5%A4%B9%28%E7%9B%AE%E5%BD%95%29/" class="md-nav__link">
-        怎样递归删除文件夹(目录)
+        [锁] 怎样递归删除文件夹(目录)
       </a>
     </li>
   
@@ -1134,18 +1291,19 @@
     <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7_17" type="checkbox" id="__nav_7_17" checked>
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10_23" checked>
       
       
       
-      
-        <label class="md-nav__link" for="__nav_7_17">
+        <label class="md-nav__link" for="__nav_10_23" id="__nav_10_23_label" tabindex="0">
           Django
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="Django" data-md-level="2">
-        <label class="md-nav__title" for="__nav_7_17">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_10_23_label" aria-expanded="true">
+        <label class="md-nav__title" for="__nav_10_23">
           <span class="md-nav__icon md-icon"></span>
           Django
         </label>
@@ -1158,7 +1316,7 @@
   
     <li class="md-nav__item">
       <a href="../Model/" class="md-nav__link">
-        Model
+        [锁] Model
       </a>
     </li>
   
@@ -1172,7 +1330,7 @@
   
     <li class="md-nav__item">
       <a href="../django%E7%AC%94%E8%AE%B0/" class="md-nav__link">
-        Django笔记
+        [锁] Django笔记
       </a>
     </li>
   
@@ -1200,7 +1358,7 @@
   
     <li class="md-nav__item">
       <a href="../%E6%A8%A1%E6%9D%BF/" class="md-nav__link">
-        模板
+        [锁] 模板
       </a>
     </li>
   
@@ -1216,17 +1374,17 @@
   
     <li class="md-nav__item md-nav__item--active">
       
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          视图
+          [锁] 视图
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        视图
+        [锁] 视图
       </a>
       
         
@@ -1391,18 +1549,19 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7_18" type="checkbox" id="__nav_7_18" >
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10_24" >
       
       
       
-      
-        <label class="md-nav__link" for="__nav_7_18">
+        <label class="md-nav__link" for="__nav_10_24" id="__nav_10_24_label" tabindex="0">
           FLASK
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="FLASK" data-md-level="2">
-        <label class="md-nav__title" for="__nav_7_18">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_10_24_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_10_24">
           <span class="md-nav__icon md-icon"></span>
           FLASK
         </label>
@@ -1415,7 +1574,7 @@
   
     <li class="md-nav__item">
       <a href="../../FLASK/bootstrap/" class="md-nav__link">
-        Bootstrap
+        [锁] Bootstrap
       </a>
     </li>
   
@@ -1429,7 +1588,7 @@
   
     <li class="md-nav__item">
       <a href="../../FLASK/sql/" class="md-nav__link">
-        Sql
+        [锁] Sql
       </a>
     </li>
   
@@ -1443,7 +1602,7 @@
   
     <li class="md-nav__item">
       <a href="../../FLASK/wtf/" class="md-nav__link">
-        Wtf
+        [锁] Wtf
       </a>
     </li>
   
@@ -1457,7 +1616,7 @@
   
     <li class="md-nav__item">
       <a href="../../FLASK/%E7%AC%94%E8%AE%B0/" class="md-nav__link">
-        笔记
+        [锁] 笔记
       </a>
     </li>
   
@@ -1494,18 +1653,19 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7_19" type="checkbox" id="__nav_7_19" >
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10_25" >
       
       
       
-      
-        <label class="md-nav__link" for="__nav_7_19">
+        <label class="md-nav__link" for="__nav_10_25" id="__nav_10_25_label" tabindex="0">
           GUI
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="GUI" data-md-level="2">
-        <label class="md-nav__title" for="__nav_7_19">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_10_25_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_10_25">
           <span class="md-nav__icon md-icon"></span>
           GUI
         </label>
@@ -1520,18 +1680,19 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7_19_1" type="checkbox" id="__nav_7_19_1" >
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10_25_1" >
       
       
       
-      
-        <label class="md-nav__link" for="__nav_7_19_1">
+        <label class="md-nav__link" for="__nav_10_25_1" id="__nav_10_25_1_label" tabindex="0">
           QT
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="QT" data-md-level="3">
-        <label class="md-nav__title" for="__nav_7_19_1">
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_10_25_1_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_10_25_1">
           <span class="md-nav__icon md-icon"></span>
           QT
         </label>
@@ -1544,7 +1705,7 @@
   
     <li class="md-nav__item">
       <a href="../../GUI/QT/main/" class="md-nav__link">
-        Main
+        [锁] Main
       </a>
     </li>
   
@@ -1567,18 +1728,19 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7_19_2" type="checkbox" id="__nav_7_19_2" >
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10_25_2" >
       
       
       
-      
-        <label class="md-nav__link" for="__nav_7_19_2">
+        <label class="md-nav__link" for="__nav_10_25_2" id="__nav_10_25_2_label" tabindex="0">
           Tkinter
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="Tkinter" data-md-level="3">
-        <label class="md-nav__title" for="__nav_7_19_2">
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_10_25_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_10_25_2">
           <span class="md-nav__icon md-icon"></span>
           Tkinter
         </label>
@@ -1591,7 +1753,7 @@
   
     <li class="md-nav__item">
       <a href="../../GUI/Tkinter/Tkinter/" class="md-nav__link">
-        Tkinter
+        [锁] Tkinter
       </a>
     </li>
   
@@ -1635,18 +1797,19 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7_20" type="checkbox" id="__nav_7_20" >
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10_26" >
       
       
       
-      
-        <label class="md-nav__link" for="__nav_7_20">
+        <label class="md-nav__link" for="__nav_10_26" id="__nav_10_26_label" tabindex="0">
           Scrapy
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="Scrapy" data-md-level="2">
-        <label class="md-nav__title" for="__nav_7_20">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_10_26_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_10_26">
           <span class="md-nav__icon md-icon"></span>
           Scrapy
         </label>
@@ -1659,7 +1822,7 @@
   
     <li class="md-nav__item">
       <a href="../../Scrapy/note/" class="md-nav__link">
-        Note
+        [锁] Note
       </a>
     </li>
   
@@ -1690,18 +1853,19 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8" type="checkbox" id="__nav_8" >
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" >
       
       
       
-      
-        <label class="md-nav__link" for="__nav_8">
+        <label class="md-nav__link" for="__nav_11" id="__nav_11_label" tabindex="0">
           Typora
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="Typora" data-md-level="1">
-        <label class="md-nav__title" for="__nav_8">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_11">
           <span class="md-nav__icon md-icon"></span>
           Typora
         </label>
@@ -1738,22 +1902,37 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9" type="checkbox" id="__nav_9" >
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12" >
       
       
       
-      
-        <label class="md-nav__link" for="__nav_9">
+        <label class="md-nav__link" for="__nav_12" id="__nav_12_label" tabindex="0">
           Window系统
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="Window系统" data-md-level="1">
-        <label class="md-nav__title" for="__nav_9">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_12_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_12">
           <span class="md-nav__icon md-icon"></span>
           Window系统
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Window%E7%B3%BB%E7%BB%9F/Win7%E6%89%BE%E4%B8%8D%E5%88%B0dll%E9%97%AE%E9%A2%98/" class="md-nav__link">
+        [锁] Win7找不到dll问题
+      </a>
+    </li>
+  
+
+            
           
             
               
@@ -1776,7 +1955,7 @@
   
     <li class="md-nav__item">
       <a href="../../../Window%E7%B3%BB%E7%BB%9F/%E5%9C%A8windows%E4%B8%8B%E6%80%8E%E6%A0%B7%E5%A4%8D%E5%88%B6ext4%E5%88%86%E5%8C%BAlinux%E7%B3%BB%E7%BB%9F%E7%9A%84%E6%96%87%E4%BB%B6/" class="md-nav__link">
-        在windows下怎样复制ext4分区linux系统的文件
+        [锁] 在windows下怎样复制ext4分区linux系统的文件
       </a>
     </li>
   
@@ -1804,7 +1983,21 @@
   
     <li class="md-nav__item">
       <a href="../../../Window%E7%B3%BB%E7%BB%9F/%E7%94%B5%E8%84%91%E7%AB%AF%E9%95%BF%E6%88%AA%E5%9B%BE%E7%9A%84%E6%96%B9%E6%B3%95%EF%BC%8C%E6%B5%8F%E8%A7%88%E5%99%A8%E9%95%BF%E6%88%AA%E5%9B%BE%E4%B8%8E%E6%88%AA%E5%9B%BE%E6%96%B9%E6%B3%95/" class="md-nav__link">
-        电脑端长截图的方法，浏览器长截图与截图方法
+        [锁] 电脑端长截图的方法，浏览器长截图与截图方法
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Window%E7%B3%BB%E7%BB%9F/%E8%BF%9C%E7%A8%8B%E6%A1%8C%E9%9D%A2/" class="md-nav__link">
+        [锁] 远程桌面
       </a>
     </li>
   
@@ -1828,18 +2021,96 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10" type="checkbox" id="__nav_10" >
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_13" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_13" id="__nav_13_label" tabindex="0">
+          Mysql
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_13_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_13">
+          <span class="md-nav__icon md-icon"></span>
+          Mysql
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../mysql/MYSQL%E5%AD%A6%E4%B9%A0%E4%B8%AD%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/" class="md-nav__link">
+        MYSQL学习中遇到的问题
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../mysql/%E7%9F%A5%E8%AF%86%E7%82%B9/" class="md-nav__link">
+        [锁] 知识点
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../mysql/%E7%BB%83%E4%B9%A0%E5%86%85%E5%AE%B9/" class="md-nav__link">
+        练习内容
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
       
       
       
       
-        <label class="md-nav__link" for="__nav_10">
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_14" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_14" id="__nav_14_label" tabindex="0">
           其他开发知识
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="其他开发知识" data-md-level="1">
-        <label class="md-nav__title" for="__nav_10">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_14_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_14">
           <span class="md-nav__icon md-icon"></span>
           其他开发知识
         </label>
@@ -1890,18 +2161,19 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_11" type="checkbox" id="__nav_11" >
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_15" >
       
       
       
-      
-        <label class="md-nav__link" for="__nav_11">
+        <label class="md-nav__link" for="__nav_15" id="__nav_15_label" tabindex="0">
           前端
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="前端" data-md-level="1">
-        <label class="md-nav__title" for="__nav_11">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_15_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_15">
           <span class="md-nav__icon md-icon"></span>
           前端
         </label>
@@ -1912,22 +2184,51 @@
   
   
   
+    <li class="md-nav__item">
+      <a href="../../../%E5%89%8D%E7%AB%AF/Javascript/" class="md-nav__link">
+        Javascript
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E5%89%8D%E7%AB%AF/Nodejs/" class="md-nav__link">
+        Nodejs
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
     
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_11_1" type="checkbox" id="__nav_11_1" >
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_15_3" >
       
       
       
-      
-        <label class="md-nav__link" for="__nav_11_1">
+        <label class="md-nav__link" for="__nav_15_3" id="__nav_15_3_label" tabindex="0">
           CSS教程
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="CSS教程" data-md-level="2">
-        <label class="md-nav__title" for="__nav_11_1">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_15_3_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_15_3">
           <span class="md-nav__icon md-icon"></span>
           CSS教程
         </label>
@@ -1977,18 +2278,19 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_11_2" type="checkbox" id="__nav_11_2" >
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_15_4" >
       
       
       
-      
-        <label class="md-nav__link" for="__nav_11_2">
+        <label class="md-nav__link" for="__nav_15_4" id="__nav_15_4_label" tabindex="0">
           HTML教程
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="HTML教程" data-md-level="2">
-        <label class="md-nav__title" for="__nav_11_2">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_15_4_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_15_4">
           <span class="md-nav__icon md-icon"></span>
           HTML教程
         </label>
@@ -2024,112 +2326,19 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_11_3" type="checkbox" id="__nav_11_3" >
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_15_5" >
       
       
       
-      
-        <label class="md-nav__link" for="__nav_11_3">
-          Javascript
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="Javascript" data-md-level="2">
-        <label class="md-nav__title" for="__nav_11_3">
-          <span class="md-nav__icon md-icon"></span>
-          Javascript
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../%E5%89%8D%E7%AB%AF/Javascript/main/" class="md-nav__link">
-        Main
-      </a>
-    </li>
-  
-
-            
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_11_4" type="checkbox" id="__nav_11_4" >
-      
-      
-      
-      
-        <label class="md-nav__link" for="__nav_11_4">
-          Nodejs
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="Nodejs" data-md-level="2">
-        <label class="md-nav__title" for="__nav_11_4">
-          <span class="md-nav__icon md-icon"></span>
-          Nodejs
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../%E5%89%8D%E7%AB%AF/Nodejs/main/" class="md-nav__link">
-        Main
-      </a>
-    </li>
-  
-
-            
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_11_5" type="checkbox" id="__nav_11_5" >
-      
-      
-      
-      
-        <label class="md-nav__link" for="__nav_11_5">
+        <label class="md-nav__link" for="__nav_15_5" id="__nav_15_5_label" tabindex="0">
           Uniapp
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="Uniapp" data-md-level="2">
-        <label class="md-nav__title" for="__nav_11_5">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_15_5_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_15_5">
           <span class="md-nav__icon md-icon"></span>
           Uniapp
         </label>
@@ -2165,18 +2374,19 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_11_6" type="checkbox" id="__nav_11_6" >
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_15_6" >
       
       
       
-      
-        <label class="md-nav__link" for="__nav_11_6">
+        <label class="md-nav__link" for="__nav_15_6" id="__nav_15_6_label" tabindex="0">
           Vue
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="Vue" data-md-level="2">
-        <label class="md-nav__title" for="__nav_11_6">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_15_6_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_15_6">
           <span class="md-nav__icon md-icon"></span>
           Vue
         </label>
@@ -2220,18 +2430,19 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_12" type="checkbox" id="__nav_12" >
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_16" >
       
       
       
-      
-        <label class="md-nav__link" for="__nav_12">
+        <label class="md-nav__link" for="__nav_16" id="__nav_16_label" tabindex="0">
           博客网站搭建
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="博客网站搭建" data-md-level="1">
-        <label class="md-nav__title" for="__nav_12">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_16_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_16">
           <span class="md-nav__icon md-icon"></span>
           博客网站搭建
         </label>
@@ -2242,22 +2453,37 @@
   
   
   
+    <li class="md-nav__item">
+      <a href="../../../%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA/mkdocs/" class="md-nav__link">
+        [锁] 开始
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
     
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_12_1" type="checkbox" id="__nav_12_1" >
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_16_2" >
       
       
       
-      
-        <label class="md-nav__link" for="__nav_12_1">
+        <label class="md-nav__link" for="__nav_16_2" id="__nav_16_2_label" tabindex="0">
           Hexo
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="Hexo" data-md-level="2">
-        <label class="md-nav__title" for="__nav_12_1">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_16_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_16_2">
           <span class="md-nav__icon md-icon"></span>
           Hexo
         </label>
@@ -2293,18 +2519,19 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_12_2" type="checkbox" id="__nav_12_2" >
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_16_3" >
       
       
       
-      
-        <label class="md-nav__link" for="__nav_12_2">
+        <label class="md-nav__link" for="__nav_16_3" id="__nav_16_3_label" tabindex="0">
           Jekyll
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="Jekyll" data-md-level="2">
-        <label class="md-nav__title" for="__nav_12_2">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_16_3_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_16_3">
           <span class="md-nav__icon md-icon"></span>
           Jekyll
         </label>
@@ -2373,53 +2600,6 @@
 
             
           
-            
-              
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_12_3" type="checkbox" id="__nav_12_3" >
-      
-      
-      
-      
-        <label class="md-nav__link" for="__nav_12_3">
-          Mkdocs
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="Mkdocs" data-md-level="2">
-        <label class="md-nav__title" for="__nav_12_3">
-          <span class="md-nav__icon md-icon"></span>
-          Mkdocs
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA/mkdocs/%E5%A6%82%E4%BD%95%E5%81%9A/" class="md-nav__link">
-        如何做
-      </a>
-    </li>
-  
-
-            
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-            
-          
         </ul>
       </nav>
     </li>
@@ -2437,18 +2617,19 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_13" type="checkbox" id="__nav_13" >
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_17" >
       
       
       
-      
-        <label class="md-nav__link" for="__nav_13">
+        <label class="md-nav__link" for="__nav_17" id="__nav_17_label" tabindex="0">
           软件推荐
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="软件推荐" data-md-level="1">
-        <label class="md-nav__title" for="__nav_13">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_17_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_17">
           <span class="md-nav__icon md-icon"></span>
           软件推荐
         </label>
@@ -2475,7 +2656,7 @@
   
     <li class="md-nav__item">
       <a href="../../../%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90/%E5%A4%9A%E6%AC%BE%E5%85%8D%E8%B4%B9%E8%A7%86%E9%A2%91%E5%89%AA%E8%BE%91%E8%BD%AF%E4%BB%B6%E6%B1%87%E6%80%BB/" class="md-nav__link">
-        多款免费视频剪辑软件汇总
+        [锁] 多款免费视频剪辑软件汇总
       </a>
     </li>
   
@@ -2490,6 +2671,20 @@
     <li class="md-nav__item">
       <a href="../../../%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90/%E6%8A%95%E5%B1%8F%E7%A5%9E%E5%99%A8scrcpy%21%20%E4%BB%BB%E4%BD%95%E6%99%BA%E8%83%BD%E6%89%8B%E6%9C%BA%E9%83%BD%E8%83%BD%E6%8A%95%E5%B1%8F%E5%88%B0%E7%94%B5%E8%84%91%E4%B8%8A/" class="md-nav__link">
         投屏神器scrcpy! 任何智能手机都能投屏到电脑上
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90/%E8%AE%A9%E4%BD%A0%E7%9A%84windows%E5%BA%94%E7%94%A8%E7%AA%97%E5%8F%A3%E5%8F%98%E9%80%8F%E6%98%8E/" class="md-nav__link">
+        让你的windows应用窗口变透明
       </a>
     </li>
   
@@ -2644,161 +2839,53 @@
               </div>
             
           
-          <div class="md-content" data-md-component="content">
-            <article class="md-content__inner md-typeset">
-              
-  
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
                 
-  <a href="https://github.com/wdh99/edit/master/docs/Python语言/Django/视图.md" title="编辑此页" class="md-content__button md-icon">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
-  </a>
+  
+                  
 
-
-
-<h2 id="view">创建一个view(页面)的基本步骤<a class="headerlink" href="#view" title="Permanent link">&para;</a></h2>
-<p>以login app为例子</p>
-<ul>
-<li>编写login/views.py</li>
-<li>新建login/urls.py,编写app_name与urlpatterns</li>
-<li>新建templates,编写html文件</li>
-<li>编写 工程/settings.py的INSTALLED_APPS</li>
-<li>编写 工程/urls.py的urlpatterns</li>
-</ul>
-<h2 id="register">增加register应用有两种方式<a class="headerlink" href="#register" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><span class="c1">#工程/settins.py</span>
-
-<span class="n">INSTALLED_APPS</span><span class="o">=</span><span class="p">[</span>
-    <span class="s1">&#39;polls&#39;</span>
-<span class="p">]</span>
-<span class="n">INSTALLED_APPS</span><span class="o">=</span><span class="p">[</span>
-    <span class="s1">&#39;polls.apps.PollsConfig&#39;</span> <span class="c1">#polls目录(package)下的apps模块(module)的PollsConfig类,这是在startapp时自动创建的</span>
-<span class="p">]</span>
-</code></pre></div>
-<h2 id="_1">用户 <code>注册\登录\退出\验证</code><a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<p>可以使用自带的</p>
-<div class="highlight"><pre><span></span><code><span class="c1">#应用.views.py</span>
-<span class="kn">from</span> <span class="nn">django.contrib.auth.models</span> <span class="kn">import</span> <span class="n">User</span>
-<span class="kn">from</span> <span class="nn">django.contrib.auth</span> <span class="kn">import</span> <span class="n">authenticate</span><span class="p">,</span><span class="n">logout</span><span class="p">,</span><span class="n">login</span>
-
-<span class="c1">#注意视图函数和导入的方法不要同名!!</span>
-
-<span class="c1">#创建用户(注册)</span>
-<span class="n">User</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">create_user</span><span class="p">(</span><span class="n">username</span><span class="o">=</span><span class="n">username</span><span class="p">,</span><span class="n">password</span><span class="o">=</span><span class="n">password</span><span class="p">)</span>
-
-<span class="c1">#登录前验证用户是否在数据库,且名字密码是否正确</span>
-<span class="n">user</span><span class="o">=</span> <span class="n">authenticate</span><span class="p">(</span><span class="n">username</span><span class="o">=</span><span class="n">username</span><span class="p">,</span> <span class="n">password</span><span class="o">=</span><span class="n">password</span><span class="p">)</span>
-
-<span class="k">if</span> <span class="n">user</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span><span class="c1">#信息没有错误</span>
-
-<span class="c1">#通过session登录</span>
-<span class="n">login</span><span class="p">(</span><span class="n">request</span><span class="p">,</span><span class="n">user</span><span class="p">)</span>
-
-<span class="c1">#退出登录</span>
-<span class="n">logout</span><span class="p">(</span><span class="n">request</span><span class="p">)</span>
-
-<span class="c1">#通过session判断登录</span>
-<span class="k">if</span> <span class="n">request</span><span class="o">.</span><span class="n">user</span><span class="o">.</span><span class="n">is_authenticated</span><span class="p">:</span> <span class="c1">#登录过</span>
-</code></pre></div>
-<h2 id="_2">跳转 重定向<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">django.shortcuts</span> <span class="kn">import</span> <span class="n">redirect</span>
-
-<span class="k">def</span> <span class="nf">index</span><span class="p">(</span><span class="n">request</span><span class="p">):</span>
-    <span class="c1">#...</span>
-    <span class="k">return</span> <span class="n">redirect</span><span class="p">(</span><span class="s1">&#39;login/&#39;</span><span class="p">)</span>
-</code></pre></div>
-<h2 id="q-f">查询中的Q, F<a class="headerlink" href="#q-f" title="Permanent link">&para;</a></h2>
-<p>Q:条件的逻辑关系</p>
-<div class="highlight"><pre><span></span><code>from django.db.models import Q
-</code></pre></div>
-<p>Q(条件) 与或非 Q(另外一个条件)</p>
-<p>F: 针对Model类属性的比较和操作</p>
-<div class="highlight"><pre><span></span><code>from django.db.models import F
-</code></pre></div>
-<p>F(自身字段)</p>
-<h2 id="ajax">ajax请求<a class="headerlink" href="#ajax" title="Permanent link">&para;</a></h2>
-<p>html文件中:</p>
-<div class="highlight"><pre><span></span><code><span class="nx">引入jquery</span><span class="w"></span>
-<span class="nx">$</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span><span class="w"></span>
-<span class="w">    </span><span class="nx">$</span><span class="p">.</span><span class="nx">ajax</span><span class="p">({</span><span class="w"></span>
-<span class="w">        </span><span class="p">...</span><span class="w"></span>
-<span class="w">    </span><span class="p">}).</span><span class="nx">success</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">data</span><span class="p">){</span><span class="c1">//data是django返回的数据</span><span class="w"></span>
-<span class="w">        </span><span class="nx">location</span><span class="p">.</span><span class="nx">href</span><span class="p">(</span><span class="s1">&#39;目标url&#39;</span><span class="p">)</span><span class="w"> </span><span class="c1">//跳转重定向</span><span class="w"></span>
-<span class="w">    </span><span class="p">})</span><span class="w"></span>
-<span class="p">})</span><span class="w"></span>
-</code></pre></div>
-<p>视图中:</p>
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">xxx</span><span class="p">(</span><span class="n">r</span><span class="p">):</span>
-    <span class="n">r</span><span class="o">.</span><span class="n">POST</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;html标签的name属性&#39;</span><span class="p">)</span> <span class="c1">#获取前段输入</span>
-    <span class="k">return</span> <span class="n">JsonResponse</span><span class="p">({</span><span class="o">...</span><span class="p">})</span>
-</code></pre></div>
-<h2 id="cookie">cookie<a class="headerlink" href="#cookie" title="Permanent link">&para;</a></h2>
-<h3 id="cookie_1">设置cookie<a class="headerlink" href="#cookie_1" title="Permanent link">&para;</a></h3>
-<p>视图中:</p>
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">xxx</span><span class="p">(</span><span class="n">r</span><span class="p">):</span>
-    <span class="n">res</span><span class="o">=</span> <span class="n">HttpResponse</span><span class="p">(</span><span class="s1">&#39;xx&#39;</span><span class="p">)</span>
-    <span class="n">res</span><span class="o">.</span><span class="n">set_cookie</span><span class="p">(</span><span class="s1">&#39;key&#39;</span><span class="p">,</span><span class="n">value</span><span class="p">)</span>
-    <span class="k">return</span> <span class="n">res</span>
-</code></pre></div>
-<h3 id="cookie_2">获取cookie<a class="headerlink" href="#cookie_2" title="Permanent link">&para;</a></h3>
-<blockquote>
-<p>取出来的都是字符串</p>
-</blockquote>
-<p>视图中:</p>
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">xxx</span><span class="p">(</span><span class="n">r</span><span class="p">):</span>
-    <span class="n">k</span><span class="o">=</span><span class="n">r</span><span class="o">.</span><span class="n">COOKIES</span><span class="p">[</span><span class="s1">&#39;key&#39;</span><span class="p">]</span>
-    <span class="o">...</span>
-</code></pre></div>
-<h2 id="session">session<a class="headerlink" href="#session" title="Permanent link">&para;</a></h2>
-<h3 id="session_1">设置session<a class="headerlink" href="#session_1" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">xxx</span><span class="p">(</span><span class="n">r</span><span class="p">):</span>
-    <span class="n">r</span><span class="o">.</span><span class="n">session</span><span class="p">[</span><span class="s1">&#39;key&#39;</span><span class="p">]</span><span class="o">=</span><span class="s1">&#39;test&#39;</span>
-    <span class="o">...</span>
-</code></pre></div>
-<p>设置的session会保存在数据库表django_session中.</p>
-<p>（图：django_session表）</p>
-<h3 id="session_2">获取session<a class="headerlink" href="#session_2" title="Permanent link">&para;</a></h3>
-<blockquote>
-<p>存的什么类型数据, 取出来就什么类型数据</p>
-</blockquote>
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">xxx</span><span class="p">(</span><span class="n">r</span><span class="p">):</span>
-    <span class="n">r</span><span class="o">.</span><span class="n">session</span><span class="p">[</span><span class="s1">&#39;key&#39;</span><span class="p">]</span>
-    <span class="o">...</span>
-</code></pre></div>
-<h2 id="formcsrf_token">form表单与csrf_token<a class="headerlink" href="#formcsrf_token" title="Permanent link">&para;</a></h2>
-<p>视图中:</p>
-<p>使用<code>csrf_protect</code>装饰器</p>
-<div class="highlight"><pre><span></span><code><span class="o">...</span>
-<span class="kn">from</span> <span class="nn">django.views.decorators.csrf</span> <span class="kn">import</span> <span class="n">csrf_protect</span>
-
-<span class="nd">@csrf_protect</span>
-<span class="k">def</span> <span class="nf">login</span><span class="p">(</span><span class="n">request</span><span class="p">):</span>
-    <span class="k">return</span> <span class="n">render</span><span class="p">(</span><span class="n">request</span><span class="p">,</span><span class="s1">&#39;login/login.html&#39;</span><span class="p">)</span>
-</code></pre></div>
-<p>模板中:</p>
-<p>加入<code>{% csrf_token %}</code></p>
-<div class="highlight"><pre><span></span><code>...
-<span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">form</span> <span class="na">action</span><span class="o">=</span><span class="s">&quot;check&quot;</span> <span class="na">method</span><span class="o">=</span><span class="s">&quot;post&quot;</span><span class="p">&gt;</span>
-        {% csrf_token %}
-        用户名<span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;username&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;username&quot;</span><span class="p">&gt;&lt;</span><span class="nt">br</span><span class="p">&gt;</span>
-        密码<span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;password&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;password&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;password&quot;</span><span class="p">&gt;&lt;</span><span class="nt">br</span><span class="p">&gt;</span>
-        <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;submit&quot;</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;登录&quot;</span><span class="p">&gt;</span>
-    <span class="p">&lt;/</span><span class="nt">form</span><span class="p">&gt;</span>
-<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
-...
-</code></pre></div>
-<h1 id="_3">问题与解决<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h1>
-<ul>
-<li>修改模型类的名字之后,找不到数据表?</li>
-</ul>
-<p>这是需要设置模型类的META属性, 指定一个固定的数据表名, 就不会发生找不到的情况了.</p>
-
-              
+  
   
 
-            </article>
-            
-          </div>
+
+<div id="mkdocs-encrypted-content" style="display:none">R5EZa/S/5vlfjANS3NvExQ==;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;^</div>
+<div id="mkdocs-decrypted-content">
+    <form id="mkdocs-decrypt-form">
+        <h1>内容已加密 </h1>
+        <p>-----请联系作者解锁-----</p>
+        <input type="password" id="mkdocs-content-password" placeholder="按 CTRL+ENTER 确认密码---------" />
+        
+        <p id="mkdocs-decrypt-msg"></p>
+    </form>
+</div>
+
+<script type="text/javascript">
+var encryptcontent_path = "Python%E8%AF%AD%E8%A8%80/Django/%E8%A7%86%E5%9B%BE/";
+var decryption_failure_message = "\u5bc6\u7801\u65e0\u6548";
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/core.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/enc-base64.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/cipher-core.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/pad-nopadding.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/md5.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/aes.js"></script>
+<script type="text/javascript" src="../../../assets/javascripts/decrypt-contents.js" defer></script>
+
+
+
+
+
+
+                
+  
+
+              </article>
+            </div>
+          
+          
         </div>
         
       </main>
@@ -2809,7 +2896,7 @@
   
     <nav
       class="md-footer__inner md-grid"
-      aria-label="页脚"
+      aria-label=""
     >
       
         <a
@@ -2825,7 +2912,7 @@
               <span class="md-footer__direction">
                 上一页
               </span>
-              模板
+              [锁] 模板
             </div>
           </div>
         </a>
@@ -2875,16 +2962,17 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.b97dbffb.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.config.lang": "ja", "search.config.pipeline": "trimmer, stemmer", "search.config.separator": "[\\s\\-\uff0c\u3002]+", "search.placeholder": "\u641c\u7d22", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version.title": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.6c7ad80a.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.efa0ade1.min.js"></script>
       
         <script src="../../../js/baidu-tongji.js"></script>
       
         <script src="https://unpkg.com/mermaid@8.8.4/dist/mermaid.min.js"></script>
       
-        <script src="../../../assets/pymdownx-extras/extra-loader-6cff4ffc.js"></script>
+        <script src="../../../assets/pymdownx-extras/extra-loader-52693605.js"></script>
       
     
   </body>

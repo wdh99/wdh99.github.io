@@ -1,0 +1,47 @@
+//声明变量
+int a = 1;
+其他有
+short a = ;
+long a=xxxl;//l可以大小写:l L
+byte a=;
+float a = xxxf;
+double a=xx; //不需要后缀
+
+
+字符串可以用加号拼接
+
+
+//数组
+int[] numbers = new int[5]; //5是数组长度
+int[][] numbers = new int[5][3]; 
+另一张方式声明数组
+int[] numbers  = {0,0,0,0,0};
+int[][] numbers = {{1,2,3},{4,5,6}};
+//要像python中print列表一样的结果
+使用
+impport java.util.Array
+...
+System.out.println(Array.toString(变量名));
+System.out.println(Array.deepToString(变量名));//对超过一维的数组
+...
+
+
+//常量
+final float PI=3.14f;
+
+
+//运算
+int result = 10/3;//结果是3
+double result = (double)10/(double)3; //3.333..
+double()
+
+
+//类型转换 
+自动转换规则byte->short->int->long->float->double,不可以从double往byte方向自动转换
+System.out.println("字符串"+1); //1会被转换为字符串
+
+
+//for循环数组
+String[] fruits={"apple","pear","what"};
+        for (String fruit: fruits)
+            System.out.println(fruit);
