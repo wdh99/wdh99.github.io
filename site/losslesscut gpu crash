@@ -1,8 +1,0 @@
-[wu@wu-invalid 桌面]$ losslesscut
-CLI arguments { _: [] }
-Current version 3.46.2
-Newest version 3.46.2
-[3444:1004/201646.156022:FATAL:gpu_data_manager_impl_private.cc(1034)] The display compositor is frequently crashing. Goodbye.
-
-solved:
-losslesscut --no-sandbox
