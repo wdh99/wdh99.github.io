@@ -8,26 +8,28 @@
       
       
       
-        <link rel="canonical" href="https://wdh99.github.io/">
+        <link rel="canonical" href="https://wdh99.github.io/%E7%BC%96%E7%A8%8B/Python/FLASK/sql/">
       
       
+        <link rel="prev" href="../bootstrap/">
       
-        <link rel="next" href="A%E5%BA%94%E7%94%A8-%E5%B7%A5%E5%85%B7/%E5%90%89%E4%BB%96%E6%8C%87%E6%9D%BF%E8%AE%AD%E7%BB%83%E5%8A%A9%E6%89%8B/">
+      
+        <link rel="next" href="../wtf/">
       
       
-      <link rel="icon" href="assets/images/favicon.png">
+      <link rel="icon" href="../../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.3">
     
     
       
-        <title>WDH99</title>
+        <title>[Protected] Sql - WDH99</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.50c56a3b.min.css">
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.50c56a3b.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -37,8 +39,8 @@
 
       
     
-<script src="assets/pymdownx-extras/material-extra-theme-TVq-kNRT.js" type="text/javascript"></script>
-<script src="assets/pymdownx-extras/material-extra-3rdparty-E-i8w1WA.js" type="text/javascript"></script>
+<script src="../../../../assets/pymdownx-extras/material-extra-theme-TVq-kNRT.js" type="text/javascript"></script>
+<script src="../../../../assets/pymdownx-extras/material-extra-3rdparty-E-i8w1WA.js" type="text/javascript"></script>
 
     
       
@@ -50,9 +52,9 @@
       
     
     
-      <link rel="stylesheet" href="assets/pymdownx-extras/extra-fb5a2a1c86.css">
+      <link rel="stylesheet" href="../../../../assets/pymdownx-extras/extra-fb5a2a1c86.css">
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -77,11 +79,6 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
-        
-        <a href="#_1" class="md-skip">
-          跳转至
-        </a>
-      
     </div>
     <div data-md-component="announce">
       
@@ -94,7 +91,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="页眉">
-    <a href="." title="WDH99" class="md-header__button md-logo" aria-label="WDH99" data-md-component="logo">
+    <a href="../../../.." title="WDH99" class="md-header__button md-logo" aria-label="WDH99" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -114,7 +111,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Home
+              [Protected] Sql
             
           </span>
         </div>
@@ -227,7 +224,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="导航栏" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="WDH99" class="md-nav__button md-logo" aria-label="WDH99" data-md-component="logo">
+    <a href="../../../.." title="WDH99" class="md-nav__button md-logo" aria-label="WDH99" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -254,28 +251,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Home
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="." class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -284,78 +263,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="目录">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      目录
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      寻找
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      公众号
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      音乐
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    <span class="md-ellipsis">
-      论坛
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
-    <span class="md-ellipsis">
-      软件下载
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
-    <span class="md-ellipsis">
-      联系方式
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -404,7 +311,7 @@
   
   
     <li class="md-nav__item">
-      <a href="A%E5%BA%94%E7%94%A8-%E5%B7%A5%E5%85%B7/%E5%90%89%E4%BB%96%E6%8C%87%E6%9D%BF%E8%AE%AD%E7%BB%83%E5%8A%A9%E6%89%8B/" class="md-nav__link">
+      <a href="../../../../A%E5%BA%94%E7%94%A8-%E5%B7%A5%E5%85%B7/%E5%90%89%E4%BB%96%E6%8C%87%E6%9D%BF%E8%AE%AD%E7%BB%83%E5%8A%A9%E6%89%8B/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -425,7 +332,7 @@
   
   
     <li class="md-nav__item">
-      <a href="A%E5%BA%94%E7%94%A8-%E5%B7%A5%E5%85%B7/%E8%AE%A9%E4%BD%A0%E7%9A%84windows%E5%BA%94%E7%94%A8%E7%AA%97%E5%8F%A3%E5%8F%98%E9%80%8F%E6%98%8E/" class="md-nav__link">
+      <a href="../../../../A%E5%BA%94%E7%94%A8-%E5%B7%A5%E5%85%B7/%E8%AE%A9%E4%BD%A0%E7%9A%84windows%E5%BA%94%E7%94%A8%E7%AA%97%E5%8F%A3%E5%8F%98%E9%80%8F%E6%98%8E/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -490,7 +397,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Typora/%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AEtypora%E8%A6%81%E7%94%A8%E5%88%B0%E7%9A%84%E5%91%BD%E4%BB%A4%E8%A1%8C%E7%89%88picgo/" class="md-nav__link">
+      <a href="../../../../Typora/%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AEtypora%E8%A6%81%E7%94%A8%E5%88%B0%E7%9A%84%E5%91%BD%E4%BB%A4%E8%A1%8C%E7%89%88picgo/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -555,7 +462,7 @@
   
   
     <li class="md-nav__item">
-      <a href="docker/doker%E5%AE%B9%E5%99%A8%E9%87%8C%E5%AE%89%E8%A3%85%E8%BD%AF%E4%BB%B6%E6%AF%94%E5%A6%82nano/" class="md-nav__link">
+      <a href="../../../../docker/doker%E5%AE%B9%E5%99%A8%E9%87%8C%E5%AE%89%E8%A3%85%E8%BD%AF%E4%BB%B6%E6%AF%94%E5%A6%82nano/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -620,7 +527,7 @@
   
   
     <li class="md-nav__item">
-      <a href="%E6%95%B0%E5%AD%A6/%E5%A5%87%E6%80%AA%E7%9A%84%E5%85%AC%E5%BC%8F/" class="md-nav__link">
+      <a href="../../../../%E6%95%B0%E5%AD%A6/%E5%A5%87%E6%80%AA%E7%9A%84%E5%85%AC%E5%BC%8F/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -685,7 +592,7 @@
   
   
     <li class="md-nav__item">
-      <a href="%E6%9D%82/losslesscut%20gpu%20crash/" class="md-nav__link">
+      <a href="../../../../%E6%9D%82/losslesscut%20gpu%20crash/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -706,7 +613,7 @@
   
   
     <li class="md-nav__item">
-      <a href="%E6%9D%82/%E5%90%84%E7%A7%8D%E6%8A%98%E8%85%BE/" class="md-nav__link">
+      <a href="../../../../%E6%9D%82/%E5%90%84%E7%A7%8D%E6%8A%98%E8%85%BE/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -808,7 +715,7 @@
   
   
     <li class="md-nav__item">
-      <a href="%E7%B3%BB%E7%BB%9F/Linux%E7%B3%BB%E7%BB%9F/Linux%E4%B8%8A%E7%9A%84qq%E8%BD%AF%E4%BB%B6/" class="md-nav__link">
+      <a href="../../../../%E7%B3%BB%E7%BB%9F/Linux%E7%B3%BB%E7%BB%9F/Linux%E4%B8%8A%E7%9A%84qq%E8%BD%AF%E4%BB%B6/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -829,7 +736,7 @@
   
   
     <li class="md-nav__item">
-      <a href="%E7%B3%BB%E7%BB%9F/Linux%E7%B3%BB%E7%BB%9F/Linux%E8%AE%BE%E7%BD%AE%E5%9B%BD%E5%86%85%E9%95%9C%E5%83%8F%E6%BA%90%E5%85%B6%E5%AE%9E%E5%BE%88%E7%AE%80%E5%8D%95%EF%BC%8C%E5%8F%AA%E8%A6%81%E4%B8%80%E8%A1%8C%E5%91%BD%E4%BB%A4/" class="md-nav__link">
+      <a href="../../../../%E7%B3%BB%E7%BB%9F/Linux%E7%B3%BB%E7%BB%9F/Linux%E8%AE%BE%E7%BD%AE%E5%9B%BD%E5%86%85%E9%95%9C%E5%83%8F%E6%BA%90%E5%85%B6%E5%AE%9E%E5%BE%88%E7%AE%80%E5%8D%95%EF%BC%8C%E5%8F%AA%E8%A6%81%E4%B8%80%E8%A1%8C%E5%91%BD%E4%BB%A4/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -850,11 +757,11 @@
   
   
     <li class="md-nav__item">
-      <a href="%E7%B3%BB%E7%BB%9F/Linux%E7%B3%BB%E7%BB%9F/linux%E5%A4%8D%E5%88%B6windows%E7%9A%84%E6%96%87%E4%BB%B6/" class="md-nav__link">
+      <a href="../../../../%E7%B3%BB%E7%BB%9F/Linux%E7%B3%BB%E7%BB%9F/linux%E5%A4%8D%E5%88%B6windows%E7%9A%84%E6%96%87%E4%BB%B6/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Linux复制windows的文件
+    [Protected] Linux复制windows的文件
   </span>
   
 
@@ -871,11 +778,11 @@
   
   
     <li class="md-nav__item">
-      <a href="%E7%B3%BB%E7%BB%9F/Linux%E7%B3%BB%E7%BB%9F/linux%E7%89%88%E7%9A%84WPS-Office%E7%BC%BA%E5%A4%B1windings%E7%AD%89%E5%AD%97%E4%BD%93/" class="md-nav__link">
+      <a href="../../../../%E7%B3%BB%E7%BB%9F/Linux%E7%B3%BB%E7%BB%9F/linux%E7%89%88%E7%9A%84WPS-Office%E7%BC%BA%E5%A4%B1windings%E7%AD%89%E5%AD%97%E4%BD%93/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    linux版的WPS Office缺失windings等字体
+    [Protected] linux版的WPS Office缺失windings等字体
   </span>
   
 
@@ -892,7 +799,7 @@
   
   
     <li class="md-nav__item">
-      <a href="%E7%B3%BB%E7%BB%9F/Linux%E7%B3%BB%E7%BB%9F/linux%E7%B3%BB%E7%BB%9F%E4%B8%ADfcitx%E8%BE%93%E5%85%A5%E6%B3%95%E5%BF%AB%E6%8D%B7%E9%94%AE%E5%86%B2%E7%AA%81%E7%9A%84%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/" class="md-nav__link">
+      <a href="../../../../%E7%B3%BB%E7%BB%9F/Linux%E7%B3%BB%E7%BB%9F/linux%E7%B3%BB%E7%BB%9F%E4%B8%ADfcitx%E8%BE%93%E5%85%A5%E6%B3%95%E5%BF%AB%E6%8D%B7%E9%94%AE%E5%86%B2%E7%AA%81%E7%9A%84%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -913,11 +820,11 @@
   
   
     <li class="md-nav__item">
-      <a href="%E7%B3%BB%E7%BB%9F/Linux%E7%B3%BB%E7%BB%9F/shell%E4%B8%AD%E4%B8%8B%E8%BD%BD%E7%BC%96%E5%8F%B7%E4%B8%8D%E5%90%8C%E7%9A%84%E9%93%BE%E6%8E%A5/" class="md-nav__link">
+      <a href="../../../../%E7%B3%BB%E7%BB%9F/Linux%E7%B3%BB%E7%BB%9F/shell%E4%B8%AD%E4%B8%8B%E8%BD%BD%E7%BC%96%E5%8F%B7%E4%B8%8D%E5%90%8C%E7%9A%84%E9%93%BE%E6%8E%A5/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Shell中下载编号不同的链接
+    [Protected] Shell中下载编号不同的链接
   </span>
   
 
@@ -934,11 +841,11 @@
   
   
     <li class="md-nav__item">
-      <a href="%E7%B3%BB%E7%BB%9F/Linux%E7%B3%BB%E7%BB%9F/shell%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" class="md-nav__link">
+      <a href="../../../../%E7%B3%BB%E7%BB%9F/Linux%E7%B3%BB%E7%BB%9F/shell%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Shell常用命令
+    [Protected] Shell常用命令
   </span>
   
 
@@ -955,11 +862,11 @@
   
   
     <li class="md-nav__item">
-      <a href="%E7%B3%BB%E7%BB%9F/Linux%E7%B3%BB%E7%BB%9F/wifi/" class="md-nav__link">
+      <a href="../../../../%E7%B3%BB%E7%BB%9F/Linux%E7%B3%BB%E7%BB%9F/wifi/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Wifi
+    [Protected] Wifi
   </span>
   
 
@@ -976,7 +883,7 @@
   
   
     <li class="md-nav__item">
-      <a href="%E7%B3%BB%E7%BB%9F/Linux%E7%B3%BB%E7%BB%9F/wifi%E9%A9%B1%E5%8A%A8%E9%97%AE%E9%A2%98/" class="md-nav__link">
+      <a href="../../../../%E7%B3%BB%E7%BB%9F/Linux%E7%B3%BB%E7%BB%9F/wifi%E9%A9%B1%E5%8A%A8%E9%97%AE%E9%A2%98/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -997,7 +904,7 @@
   
   
     <li class="md-nav__item">
-      <a href="%E7%B3%BB%E7%BB%9F/Linux%E7%B3%BB%E7%BB%9F/%E5%AE%89%E8%A3%85pip/" class="md-nav__link">
+      <a href="../../../../%E7%B3%BB%E7%BB%9F/Linux%E7%B3%BB%E7%BB%9F/%E5%AE%89%E8%A3%85pip/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1018,7 +925,7 @@
   
   
     <li class="md-nav__item">
-      <a href="%E7%B3%BB%E7%BB%9F/Linux%E7%B3%BB%E7%BB%9F/%E5%AE%89%E8%A3%85wireshark%E6%99%AE%E9%80%9A%E7%94%A8%E6%88%B7%E5%BF%85%E5%81%9A%E7%9A%84%E9%85%8D%E7%BD%AE/" class="md-nav__link">
+      <a href="../../../../%E7%B3%BB%E7%BB%9F/Linux%E7%B3%BB%E7%BB%9F/%E5%AE%89%E8%A3%85wireshark%E6%99%AE%E9%80%9A%E7%94%A8%E6%88%B7%E5%BF%85%E5%81%9A%E7%9A%84%E9%85%8D%E7%BD%AE/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1039,7 +946,7 @@
   
   
     <li class="md-nav__item">
-      <a href="%E7%B3%BB%E7%BB%9F/Linux%E7%B3%BB%E7%BB%9F/%E5%AE%89%E8%A3%85%E4%B8%AD%E6%96%87%E8%BE%93%E5%85%A5%E6%B3%95%EF%BC%8C%E8%A7%A3%E5%86%B3IDE%E4%B8%AD%E6%97%A0%E6%B3%95%E5%88%87%E6%8D%A2%E4%B8%AD%E6%96%87%E9%97%AE%E9%A2%98/" class="md-nav__link">
+      <a href="../../../../%E7%B3%BB%E7%BB%9F/Linux%E7%B3%BB%E7%BB%9F/%E5%AE%89%E8%A3%85%E4%B8%AD%E6%96%87%E8%BE%93%E5%85%A5%E6%B3%95%EF%BC%8C%E8%A7%A3%E5%86%B3IDE%E4%B8%AD%E6%97%A0%E6%B3%95%E5%88%87%E6%8D%A2%E4%B8%AD%E6%96%87%E9%97%AE%E9%A2%98/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1060,11 +967,11 @@
   
   
     <li class="md-nav__item">
-      <a href="%E7%B3%BB%E7%BB%9F/Linux%E7%B3%BB%E7%BB%9F/%E6%81%A2%E5%A4%8Drm%E5%88%A0%E9%99%A4%E7%9A%84%E6%96%87%E4%BB%B6/" class="md-nav__link">
+      <a href="../../../../%E7%B3%BB%E7%BB%9F/Linux%E7%B3%BB%E7%BB%9F/%E6%81%A2%E5%A4%8Drm%E5%88%A0%E9%99%A4%E7%9A%84%E6%96%87%E4%BB%B6/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    恢复rm删除的文件
+    [Protected] 恢复rm删除的文件
   </span>
   
 
@@ -1081,7 +988,7 @@
   
   
     <li class="md-nav__item">
-      <a href="%E7%B3%BB%E7%BB%9F/Linux%E7%B3%BB%E7%BB%9F/%E7%94%BB%E5%9B%BE%E8%BD%AF%E4%BB%B6inkscape%E6%97%A0%E6%B3%95%E6%AD%A3%E5%B8%B8%E8%BF%90%E8%A1%8C%E8%A7%A3%E5%86%B3/" class="md-nav__link">
+      <a href="../../../../%E7%B3%BB%E7%BB%9F/Linux%E7%B3%BB%E7%BB%9F/%E7%94%BB%E5%9B%BE%E8%BD%AF%E4%BB%B6inkscape%E6%97%A0%E6%B3%95%E6%AD%A3%E5%B8%B8%E8%BF%90%E8%A1%8C%E8%A7%A3%E5%86%B3/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1102,7 +1009,7 @@
   
   
     <li class="md-nav__item">
-      <a href="%E7%B3%BB%E7%BB%9F/Linux%E7%B3%BB%E7%BB%9F/%E7%BC%BA%E5%B0%91%E5%AF%B9%E5%BA%94%E7%89%88%E6%9C%AC%E7%9A%84GLIBC/" class="md-nav__link">
+      <a href="../../../../%E7%B3%BB%E7%BB%9F/Linux%E7%B3%BB%E7%BB%9F/%E7%BC%BA%E5%B0%91%E5%AF%B9%E5%BA%94%E7%89%88%E6%9C%AC%E7%9A%84GLIBC/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1123,11 +1030,11 @@
   
   
     <li class="md-nav__item">
-      <a href="%E7%B3%BB%E7%BB%9F/Linux%E7%B3%BB%E7%BB%9F/%E8%87%AA%E5%B8%A6%E7%9A%84IDLE%E6%89%93%E4%B8%8D%E5%BC%80%EF%BC%8Ctkinter%E4%B9%9F%E6%97%A0%E6%B3%95%E5%AF%BC%E5%85%A5/" class="md-nav__link">
+      <a href="../../../../%E7%B3%BB%E7%BB%9F/Linux%E7%B3%BB%E7%BB%9F/%E8%87%AA%E5%B8%A6%E7%9A%84IDLE%E6%89%93%E4%B8%8D%E5%BC%80%EF%BC%8Ctkinter%E4%B9%9F%E6%97%A0%E6%B3%95%E5%AF%BC%E5%85%A5/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    自带的IDLE打不开，tkinter也无法导入
+    [Protected] 自带的IDLE打不开，tkinter也无法导入
   </span>
   
 
@@ -1144,7 +1051,7 @@
   
   
     <li class="md-nav__item">
-      <a href="%E7%B3%BB%E7%BB%9F/Linux%E7%B3%BB%E7%BB%9F/%E8%AE%B0%E5%BD%95manjaro%20linux%E7%9A%84U%E7%9B%98%E5%AE%89%E8%A3%85%E8%BF%87%E7%A8%8B/" class="md-nav__link">
+      <a href="../../../../%E7%B3%BB%E7%BB%9F/Linux%E7%B3%BB%E7%BB%9F/%E8%AE%B0%E5%BD%95manjaro%20linux%E7%9A%84U%E7%9B%98%E5%AE%89%E8%A3%85%E8%BF%87%E7%A8%8B/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1202,7 +1109,7 @@
   
   
     <li class="md-nav__item">
-      <a href="%E7%B3%BB%E7%BB%9F/Linux%E7%B3%BB%E7%BB%9F/ArcoLinux/use%20tip/" class="md-nav__link">
+      <a href="../../../../%E7%B3%BB%E7%BB%9F/Linux%E7%B3%BB%E7%BB%9F/ArcoLinux/use%20tip/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1223,7 +1130,7 @@
   
   
     <li class="md-nav__item">
-      <a href="%E7%B3%BB%E7%BB%9F/Linux%E7%B3%BB%E7%BB%9F/ArcoLinux/%E5%AE%89%E8%A3%85KDE-Plasma%E6%A1%8C%E9%9D%A2%E7%8E%AF%E5%A2%83/" class="md-nav__link">
+      <a href="../../../../%E7%B3%BB%E7%BB%9F/Linux%E7%B3%BB%E7%BB%9F/ArcoLinux/%E5%AE%89%E8%A3%85KDE-Plasma%E6%A1%8C%E9%9D%A2%E7%8E%AF%E5%A2%83/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1297,11 +1204,11 @@
   
   
     <li class="md-nav__item">
-      <a href="%E7%B3%BB%E7%BB%9F/Window%E7%B3%BB%E7%BB%9F/Win7%E6%89%BE%E4%B8%8D%E5%88%B0dll%E9%97%AE%E9%A2%98/" class="md-nav__link">
+      <a href="../../../../%E7%B3%BB%E7%BB%9F/Window%E7%B3%BB%E7%BB%9F/Win7%E6%89%BE%E4%B8%8D%E5%88%B0dll%E9%97%AE%E9%A2%98/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Win7找不到dll问题
+    [Protected] Win7找不到dll问题
   </span>
   
 
@@ -1318,7 +1225,7 @@
   
   
     <li class="md-nav__item">
-      <a href="%E7%B3%BB%E7%BB%9F/Window%E7%B3%BB%E7%BB%9F/cmd%20utf/" class="md-nav__link">
+      <a href="../../../../%E7%B3%BB%E7%BB%9F/Window%E7%B3%BB%E7%BB%9F/cmd%20utf/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1339,11 +1246,11 @@
   
   
     <li class="md-nav__item">
-      <a href="%E7%B3%BB%E7%BB%9F/Window%E7%B3%BB%E7%BB%9F/%E5%9C%A8windows%E4%B8%8B%E6%80%8E%E6%A0%B7%E5%A4%8D%E5%88%B6ext4%E5%88%86%E5%8C%BAlinux%E7%B3%BB%E7%BB%9F%E7%9A%84%E6%96%87%E4%BB%B6/" class="md-nav__link">
+      <a href="../../../../%E7%B3%BB%E7%BB%9F/Window%E7%B3%BB%E7%BB%9F/%E5%9C%A8windows%E4%B8%8B%E6%80%8E%E6%A0%B7%E5%A4%8D%E5%88%B6ext4%E5%88%86%E5%8C%BAlinux%E7%B3%BB%E7%BB%9F%E7%9A%84%E6%96%87%E4%BB%B6/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    在windows下怎样复制ext4分区linux系统的文件
+    [Protected] 在windows下怎样复制ext4分区linux系统的文件
   </span>
   
 
@@ -1360,7 +1267,7 @@
   
   
     <li class="md-nav__item">
-      <a href="%E7%B3%BB%E7%BB%9F/Window%E7%B3%BB%E7%BB%9F/%E6%89%B9%E9%87%8F%E5%9C%A8%E8%A1%8C%E9%A6%96%E8%A1%8C%E5%B0%BE%E6%B7%BB%E5%8A%A0%E5%AD%97%E7%AC%A6%EF%BC%8C%E4%BD%BF%E7%94%A8notepad%2B%2B/" class="md-nav__link">
+      <a href="../../../../%E7%B3%BB%E7%BB%9F/Window%E7%B3%BB%E7%BB%9F/%E6%89%B9%E9%87%8F%E5%9C%A8%E8%A1%8C%E9%A6%96%E8%A1%8C%E5%B0%BE%E6%B7%BB%E5%8A%A0%E5%AD%97%E7%AC%A6%EF%BC%8C%E4%BD%BF%E7%94%A8notepad%2B%2B/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1381,7 +1288,7 @@
   
   
     <li class="md-nav__item">
-      <a href="%E7%B3%BB%E7%BB%9F/Window%E7%B3%BB%E7%BB%9F/%E6%9F%A5%E7%9C%8B%E5%8D%A0%E7%94%A8%E7%AB%AF%E5%8F%A3%E7%9A%84%E7%A8%8B%E5%BA%8F/" class="md-nav__link">
+      <a href="../../../../%E7%B3%BB%E7%BB%9F/Window%E7%B3%BB%E7%BB%9F/%E6%9F%A5%E7%9C%8B%E5%8D%A0%E7%94%A8%E7%AB%AF%E5%8F%A3%E7%9A%84%E7%A8%8B%E5%BA%8F/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1402,11 +1309,11 @@
   
   
     <li class="md-nav__item">
-      <a href="%E7%B3%BB%E7%BB%9F/Window%E7%B3%BB%E7%BB%9F/%E7%94%B5%E8%84%91%E7%AB%AF%E9%95%BF%E6%88%AA%E5%9B%BE%E7%9A%84%E6%96%B9%E6%B3%95%EF%BC%8C%E6%B5%8F%E8%A7%88%E5%99%A8%E9%95%BF%E6%88%AA%E5%9B%BE%E4%B8%8E%E6%88%AA%E5%9B%BE%E6%96%B9%E6%B3%95/" class="md-nav__link">
+      <a href="../../../../%E7%B3%BB%E7%BB%9F/Window%E7%B3%BB%E7%BB%9F/%E7%94%B5%E8%84%91%E7%AB%AF%E9%95%BF%E6%88%AA%E5%9B%BE%E7%9A%84%E6%96%B9%E6%B3%95%EF%BC%8C%E6%B5%8F%E8%A7%88%E5%99%A8%E9%95%BF%E6%88%AA%E5%9B%BE%E4%B8%8E%E6%88%AA%E5%9B%BE%E6%96%B9%E6%B3%95/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    电脑端长截图的方法，浏览器长截图与截图方法
+    [Protected] 电脑端长截图的方法，浏览器长截图与截图方法
   </span>
   
 
@@ -1423,11 +1330,11 @@
   
   
     <li class="md-nav__item">
-      <a href="%E7%B3%BB%E7%BB%9F/Window%E7%B3%BB%E7%BB%9F/%E8%BF%9C%E7%A8%8B%E6%A1%8C%E9%9D%A2/" class="md-nav__link">
+      <a href="../../../../%E7%B3%BB%E7%BB%9F/Window%E7%B3%BB%E7%BB%9F/%E8%BF%9C%E7%A8%8B%E6%A1%8C%E9%9D%A2/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    远程桌面
+    [Protected] 远程桌面
   </span>
   
 
@@ -1456,19 +1363,21 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" checked>
         
           
           <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
@@ -1482,7 +1391,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_8">
             <span class="md-nav__icon md-icon"></span>
             编程
@@ -1496,7 +1405,7 @@
   
   
     <li class="md-nav__item">
-      <a href="%E7%BC%96%E7%A8%8B/Visual%20Studio/" class="md-nav__link">
+      <a href="../../../Visual%20Studio/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1554,7 +1463,7 @@
   
   
     <li class="md-nav__item">
-      <a href="%E7%BC%96%E7%A8%8B/AutoHotKey%E4%B8%8EAutoIt/AutoHotkey-%E8%87%AA%E5%8A%A8%E5%9C%A8%E6%96%87%E6%9C%AC%E7%BC%96%E8%BE%91%E5%99%A8%E5%8A%A0%E4%B8%8A%E6%8C%87%E5%AE%9A%E5%86%85%E5%AE%B9/" class="md-nav__link">
+      <a href="../../../AutoHotKey%E4%B8%8EAutoIt/AutoHotkey-%E8%87%AA%E5%8A%A8%E5%9C%A8%E6%96%87%E6%9C%AC%E7%BC%96%E8%BE%91%E5%99%A8%E5%8A%A0%E4%B8%8A%E6%8C%87%E5%AE%9A%E5%86%85%E5%AE%B9/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1575,7 +1484,7 @@
   
   
     <li class="md-nav__item">
-      <a href="%E7%BC%96%E7%A8%8B/AutoHotKey%E4%B8%8EAutoIt/AutoIt-%E8%87%AA%E5%8A%A8%E5%9C%A8%E6%96%87%E6%9C%AC%E7%BC%96%E8%BE%91%E5%99%A8%E5%8A%A0%E4%B8%8A%E6%8C%87%E5%AE%9A%E5%86%85%E5%AE%B9/" class="md-nav__link">
+      <a href="../../../AutoHotKey%E4%B8%8EAutoIt/AutoIt-%E8%87%AA%E5%8A%A8%E5%9C%A8%E6%96%87%E6%9C%AC%E7%BC%96%E8%BE%91%E5%99%A8%E5%8A%A0%E4%B8%8A%E6%8C%87%E5%AE%9A%E5%86%85%E5%AE%B9/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1641,7 +1550,7 @@
   
   
     <li class="md-nav__item">
-      <a href="%E7%BC%96%E7%A8%8B/C%2B%2BQT/QT/" class="md-nav__link">
+      <a href="../../../C%2B%2BQT/QT/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1707,7 +1616,7 @@
   
   
     <li class="md-nav__item">
-      <a href="%E7%BC%96%E7%A8%8B/C%E4%B8%8EC%2B%2B/SDL%E9%85%8D%E7%BD%AE/" class="md-nav__link">
+      <a href="../../../C%E4%B8%8EC%2B%2B/SDL%E9%85%8D%E7%BD%AE/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1728,7 +1637,7 @@
   
   
     <li class="md-nav__item">
-      <a href="%E7%BC%96%E7%A8%8B/C%E4%B8%8EC%2B%2B/%E5%88%9B%E5%BB%BA%E4%B8%8E%E4%BD%BF%E7%94%A8DLL/" class="md-nav__link">
+      <a href="../../../C%E4%B8%8EC%2B%2B/%E5%88%9B%E5%BB%BA%E4%B8%8E%E4%BD%BF%E7%94%A8DLL/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1749,7 +1658,7 @@
   
   
     <li class="md-nav__item">
-      <a href="%E7%BC%96%E7%A8%8B/C%E4%B8%8EC%2B%2B/%E6%8C%87%E9%92%88%E7%9A%84%E7%90%86%E8%A7%A3/" class="md-nav__link">
+      <a href="../../../C%E4%B8%8EC%2B%2B/%E6%8C%87%E9%92%88%E7%9A%84%E7%90%86%E8%A7%A3/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1770,7 +1679,7 @@
   
   
     <li class="md-nav__item">
-      <a href="%E7%BC%96%E7%A8%8B/C%E4%B8%8EC%2B%2B/%E8%B0%83%E7%94%A8DLL/" class="md-nav__link">
+      <a href="../../../C%E4%B8%8EC%2B%2B/%E8%B0%83%E7%94%A8DLL/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1836,7 +1745,7 @@
   
   
     <li class="md-nav__item">
-      <a href="%E7%BC%96%E7%A8%8B/Git%E4%B8%8EGithub/Git%E4%B8%8EGithub/" class="md-nav__link">
+      <a href="../../../Git%E4%B8%8EGithub/Git%E4%B8%8EGithub/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1902,7 +1811,7 @@
   
   
     <li class="md-nav__item">
-      <a href="%E7%BC%96%E7%A8%8B/MySQL%E6%95%B0%E6%8D%AE%E5%BA%93/MYSQL%E5%AD%A6%E4%B9%A0%E4%B8%AD%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/" class="md-nav__link">
+      <a href="../../../MySQL%E6%95%B0%E6%8D%AE%E5%BA%93/MYSQL%E5%AD%A6%E4%B9%A0%E4%B8%AD%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1923,11 +1832,11 @@
   
   
     <li class="md-nav__item">
-      <a href="%E7%BC%96%E7%A8%8B/MySQL%E6%95%B0%E6%8D%AE%E5%BA%93/MYSQL%E7%AC%94%E8%AE%B0/" class="md-nav__link">
+      <a href="../../../MySQL%E6%95%B0%E6%8D%AE%E5%BA%93/MYSQL%E7%AC%94%E8%AE%B0/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    MYSQL笔记
+    [Protected] MYSQL笔记
   </span>
   
 
@@ -1944,7 +1853,7 @@
   
   
     <li class="md-nav__item">
-      <a href="%E7%BC%96%E7%A8%8B/MySQL%E6%95%B0%E6%8D%AE%E5%BA%93/manjaro-linux%E5%AE%89%E8%A3%85mysq%28mariadb%29/" class="md-nav__link">
+      <a href="../../../MySQL%E6%95%B0%E6%8D%AE%E5%BA%93/manjaro-linux%E5%AE%89%E8%A3%85mysq%28mariadb%29/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1965,11 +1874,11 @@
   
   
     <li class="md-nav__item">
-      <a href="%E7%BC%96%E7%A8%8B/MySQL%E6%95%B0%E6%8D%AE%E5%BA%93/mysql%E6%95%B0%E6%8D%AE%E5%BA%93/" class="md-nav__link">
+      <a href="../../../MySQL%E6%95%B0%E6%8D%AE%E5%BA%93/mysql%E6%95%B0%E6%8D%AE%E5%BA%93/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Mysql数据库
+    [Protected] Mysql数据库
   </span>
   
 
@@ -1986,7 +1895,7 @@
   
   
     <li class="md-nav__item">
-      <a href="%E7%BC%96%E7%A8%8B/MySQL%E6%95%B0%E6%8D%AE%E5%BA%93/%E5%AE%89%E8%A3%85phpmyadmin%20apache2.4%20php8%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/" class="md-nav__link">
+      <a href="../../../MySQL%E6%95%B0%E6%8D%AE%E5%BA%93/%E5%AE%89%E8%A3%85phpmyadmin%20apache2.4%20php8%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2007,11 +1916,11 @@
   
   
     <li class="md-nav__item">
-      <a href="%E7%BC%96%E7%A8%8B/MySQL%E6%95%B0%E6%8D%AE%E5%BA%93/%E7%9F%A5%E8%AF%86%E7%82%B9/" class="md-nav__link">
+      <a href="../../../MySQL%E6%95%B0%E6%8D%AE%E5%BA%93/%E7%9F%A5%E8%AF%86%E7%82%B9/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    知识点
+    [Protected] 知识点
   </span>
   
 
@@ -2028,7 +1937,7 @@
   
   
     <li class="md-nav__item">
-      <a href="%E7%BC%96%E7%A8%8B/MySQL%E6%95%B0%E6%8D%AE%E5%BA%93/%E7%BB%83%E4%B9%A0%E5%86%85%E5%AE%B9/" class="md-nav__link">
+      <a href="../../../MySQL%E6%95%B0%E6%8D%AE%E5%BA%93/%E7%BB%83%E4%B9%A0%E5%86%85%E5%AE%B9/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2054,19 +1963,21 @@
                 
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_7" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_7" checked>
         
           
           <label class="md-nav__link" for="__nav_8_7" id="__nav_8_7_label" tabindex="0">
@@ -2080,7 +1991,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_7_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_7_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_8_7">
             <span class="md-nav__icon md-icon"></span>
             Python
@@ -2094,7 +2005,7 @@
   
   
     <li class="md-nav__item">
-      <a href="%E7%BC%96%E7%A8%8B/Python/Celery%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="md-nav__link">
+      <a href="../../Celery%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2115,7 +2026,7 @@
   
   
     <li class="md-nav__item">
-      <a href="%E7%BC%96%E7%A8%8B/Python/MongoDB/" class="md-nav__link">
+      <a href="../../MongoDB/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2136,11 +2047,11 @@
   
   
     <li class="md-nav__item">
-      <a href="%E7%BC%96%E7%A8%8B/Python/PyCharm/" class="md-nav__link">
+      <a href="../../PyCharm/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    PyCharm
+    [Protected] PyCharm
   </span>
   
 
@@ -2157,7 +2068,7 @@
   
   
     <li class="md-nav__item">
-      <a href="%E7%BC%96%E7%A8%8B/Python/Qt/" class="md-nav__link">
+      <a href="../../Qt/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2178,11 +2089,11 @@
   
   
     <li class="md-nav__item">
-      <a href="%E7%BC%96%E7%A8%8B/Python/Selenium/" class="md-nav__link">
+      <a href="../../Selenium/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Selenium
+    [Protected] Selenium
   </span>
   
 
@@ -2199,11 +2110,11 @@
   
   
     <li class="md-nav__item">
-      <a href="%E7%BC%96%E7%A8%8B/Python/Tkinter%E5%92%8CTurtle/" class="md-nav__link">
+      <a href="../../Tkinter%E5%92%8CTurtle/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Tkinter和Turtle
+    [Protected] Tkinter和Turtle
   </span>
   
 
@@ -2220,11 +2131,11 @@
   
   
     <li class="md-nav__item">
-      <a href="%E7%BC%96%E7%A8%8B/Python/css%E4%B8%8Expath%E8%AF%AD%E6%B3%95/" class="md-nav__link">
+      <a href="../../css%E4%B8%8Expath%E8%AF%AD%E6%B3%95/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Css与xpath语法
+    [Protected] Css与xpath语法
   </span>
   
 
@@ -2241,7 +2152,7 @@
   
   
     <li class="md-nav__item">
-      <a href="%E7%BC%96%E7%A8%8B/Python/numpy%E7%AC%94%E8%AE%B0/" class="md-nav__link">
+      <a href="../../numpy%E7%AC%94%E8%AE%B0/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2262,7 +2173,7 @@
   
   
     <li class="md-nav__item">
-      <a href="%E7%BC%96%E7%A8%8B/Python/python%E5%88%9D%E5%AD%A6%E8%80%85%E5%BF%85%E9%81%87%E5%88%B0%E7%9A%84pip%E5%AE%89%E8%A3%85%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BA%93%E9%80%9F%E5%BA%A6%E6%85%A2%E7%9A%84%E9%97%AE%E9%A2%98/" class="md-nav__link">
+      <a href="../../python%E5%88%9D%E5%AD%A6%E8%80%85%E5%BF%85%E9%81%87%E5%88%B0%E7%9A%84pip%E5%AE%89%E8%A3%85%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BA%93%E9%80%9F%E5%BA%A6%E6%85%A2%E7%9A%84%E9%97%AE%E9%A2%98/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2283,7 +2194,7 @@
   
   
     <li class="md-nav__item">
-      <a href="%E7%BC%96%E7%A8%8B/Python/python%E5%AD%97%E5%85%B8%E6%A8%A1%E6%8B%9F%E4%B8%BAjavascript%E5%AF%B9%E8%B1%A1/" class="md-nav__link">
+      <a href="../../python%E5%AD%97%E5%85%B8%E6%A8%A1%E6%8B%9F%E4%B8%BAjavascript%E5%AF%B9%E8%B1%A1/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2304,11 +2215,11 @@
   
   
     <li class="md-nav__item">
-      <a href="%E7%BC%96%E7%A8%8B/Python/python%E7%AC%94%E8%AE%B0/" class="md-nav__link">
+      <a href="../../python%E7%AC%94%E8%AE%B0/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Python笔记
+    [Protected] Python笔记
   </span>
   
 
@@ -2325,11 +2236,11 @@
   
   
     <li class="md-nav__item">
-      <a href="%E7%BC%96%E7%A8%8B/Python/python%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83venv%E4%B8%8Eflask%E8%B7%AF%E5%BE%84%E9%97%AE%E9%A2%98/" class="md-nav__link">
+      <a href="../../python%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83venv%E4%B8%8Eflask%E8%B7%AF%E5%BE%84%E9%97%AE%E9%A2%98/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Python虚拟环境venv与flask路径问题
+    [Protected] Python虚拟环境venv与flask路径问题
   </span>
   
 
@@ -2346,11 +2257,11 @@
   
   
     <li class="md-nav__item">
-      <a href="%E7%BC%96%E7%A8%8B/Python/python%E8%B0%83%E7%94%A8windows%20api%E8%8E%B7%E5%8F%96%E7%94%B5%E6%B1%A0%E4%BF%A1%E6%81%AF/" class="md-nav__link">
+      <a href="../../python%E8%B0%83%E7%94%A8windows%20api%E8%8E%B7%E5%8F%96%E7%94%B5%E6%B1%A0%E4%BF%A1%E6%81%AF/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Python调用windows api获取电池信息
+    [Protected] Python调用windows api获取电池信息
   </span>
   
 
@@ -2367,11 +2278,11 @@
   
   
     <li class="md-nav__item">
-      <a href="%E7%BC%96%E7%A8%8B/Python/pywinauto/" class="md-nav__link">
+      <a href="../../pywinauto/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Pywinauto
+    [Protected] Pywinauto
   </span>
   
 
@@ -2388,11 +2299,11 @@
   
   
     <li class="md-nav__item">
-      <a href="%E7%BC%96%E7%A8%8B/Python/requests/" class="md-nav__link">
+      <a href="../../requests/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Requests
+    [Protected] Requests
   </span>
   
 
@@ -2409,7 +2320,7 @@
   
   
     <li class="md-nav__item">
-      <a href="%E7%BC%96%E7%A8%8B/Python/sqlite3/" class="md-nav__link">
+      <a href="../../sqlite3/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2430,7 +2341,7 @@
   
   
     <li class="md-nav__item">
-      <a href="%E7%BC%96%E7%A8%8B/Python/uiautomator2/" class="md-nav__link">
+      <a href="../../uiautomator2/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2451,11 +2362,11 @@
   
   
     <li class="md-nav__item">
-      <a href="%E7%BC%96%E7%A8%8B/Python/xpath%E8%AF%AD%E6%B3%95/" class="md-nav__link">
+      <a href="../../xpath%E8%AF%AD%E6%B3%95/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Xpath语法
+    [Protected] Xpath语法
   </span>
   
 
@@ -2472,7 +2383,7 @@
   
   
     <li class="md-nav__item">
-      <a href="%E7%BC%96%E7%A8%8B/Python/%E4%B8%8D%E6%98%8E%E7%99%BD%E7%9A%84%E7%9F%A5%E8%AF%86%E7%82%B9/" class="md-nav__link">
+      <a href="../../%E4%B8%8D%E6%98%8E%E7%99%BD%E7%9A%84%E7%9F%A5%E8%AF%86%E7%82%B9/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2493,7 +2404,7 @@
   
   
     <li class="md-nav__item">
-      <a href="%E7%BC%96%E7%A8%8B/Python/%E5%A4%9A%E8%BF%9B%E7%A8%8B%E4%B8%8E%E5%A4%9A%E7%BA%BF%E7%A8%8B/" class="md-nav__link">
+      <a href="../../%E5%A4%9A%E8%BF%9B%E7%A8%8B%E4%B8%8E%E5%A4%9A%E7%BA%BF%E7%A8%8B/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2514,11 +2425,11 @@
   
   
     <li class="md-nav__item">
-      <a href="%E7%BC%96%E7%A8%8B/Python/%E6%80%8E%E6%A0%B7%E9%80%92%E5%BD%92%E5%88%A0%E9%99%A4%E6%96%87%E4%BB%B6%E5%A4%B9%28%E7%9B%AE%E5%BD%95%29/" class="md-nav__link">
+      <a href="../../%E6%80%8E%E6%A0%B7%E9%80%92%E5%BD%92%E5%88%A0%E9%99%A4%E6%96%87%E4%BB%B6%E5%A4%B9%28%E7%9B%AE%E5%BD%95%29/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    怎样递归删除文件夹(目录)
+    [Protected] 怎样递归删除文件夹(目录)
   </span>
   
 
@@ -2535,7 +2446,7 @@
   
   
     <li class="md-nav__item">
-      <a href="%E7%BC%96%E7%A8%8B/Python/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/" class="md-nav__link">
+      <a href="../../%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2556,7 +2467,7 @@
   
   
     <li class="md-nav__item">
-      <a href="%E7%BC%96%E7%A8%8B/Python/%E7%94%A8python%E7%94%BB%E5%8F%8C%E5%90%91%E7%9A%84%E6%9F%B1%E7%8A%B6%E5%9B%BE/" class="md-nav__link">
+      <a href="../../%E7%94%A8python%E7%94%BB%E5%8F%8C%E5%90%91%E7%9A%84%E6%9F%B1%E7%8A%B6%E5%9B%BE/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2614,11 +2525,11 @@
   
   
     <li class="md-nav__item">
-      <a href="%E7%BC%96%E7%A8%8B/Python/Django/Model/" class="md-nav__link">
+      <a href="../../Django/Model/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Model
+    [Protected] Model
   </span>
   
 
@@ -2635,11 +2546,11 @@
   
   
     <li class="md-nav__item">
-      <a href="%E7%BC%96%E7%A8%8B/Python/Django/django%E7%AC%94%E8%AE%B0/" class="md-nav__link">
+      <a href="../../Django/django%E7%AC%94%E8%AE%B0/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Django笔记
+    [Protected] Django笔记
   </span>
   
 
@@ -2656,7 +2567,7 @@
   
   
     <li class="md-nav__item">
-      <a href="%E7%BC%96%E7%A8%8B/Python/Django/e/" class="md-nav__link">
+      <a href="../../Django/e/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2677,11 +2588,11 @@
   
   
     <li class="md-nav__item">
-      <a href="%E7%BC%96%E7%A8%8B/Python/Django/%E6%A8%A1%E6%9D%BF/" class="md-nav__link">
+      <a href="../../Django/%E6%A8%A1%E6%9D%BF/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    模板
+    [Protected] 模板
   </span>
   
 
@@ -2698,11 +2609,11 @@
   
   
     <li class="md-nav__item">
-      <a href="%E7%BC%96%E7%A8%8B/Python/Django/%E8%A7%86%E5%9B%BE/" class="md-nav__link">
+      <a href="../../Django/%E8%A7%86%E5%9B%BE/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    视图
+    [Protected] 视图
   </span>
   
 
@@ -2719,7 +2630,7 @@
   
   
     <li class="md-nav__item">
-      <a href="%E7%BC%96%E7%A8%8B/Python/Django/%E9%97%AE%E9%A2%98/" class="md-nav__link">
+      <a href="../../Django/%E9%97%AE%E9%A2%98/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2745,19 +2656,21 @@
                 
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_7_25" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_7_25" checked>
         
           
           <label class="md-nav__link" for="__nav_8_7_25" id="__nav_8_7_25_label" tabindex="0">
@@ -2771,7 +2684,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_8_7_25_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_8_7_25_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_8_7_25">
             <span class="md-nav__icon md-icon"></span>
             FLASK
@@ -2785,11 +2698,11 @@
   
   
     <li class="md-nav__item">
-      <a href="%E7%BC%96%E7%A8%8B/Python/FLASK/bootstrap/" class="md-nav__link">
+      <a href="../bootstrap/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Bootstrap
+    [Protected] Bootstrap
   </span>
   
 
@@ -2803,18 +2716,26 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="%E7%BC%96%E7%A8%8B/Python/FLASK/sql/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
-    Sql
+    [Protected] Sql
   </span>
   
 
       </a>
+      
     </li>
   
 
@@ -2827,7 +2748,7 @@
   
   
     <li class="md-nav__item">
-      <a href="%E7%BC%96%E7%A8%8B/Python/FLASK/wtf/" class="md-nav__link">
+      <a href="../wtf/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2848,7 +2769,7 @@
   
   
     <li class="md-nav__item">
-      <a href="%E7%BC%96%E7%A8%8B/Python/FLASK/%E7%AC%94%E8%AE%B0/" class="md-nav__link">
+      <a href="../%E7%AC%94%E8%AE%B0/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2869,7 +2790,7 @@
   
   
     <li class="md-nav__item">
-      <a href="%E7%BC%96%E7%A8%8B/Python/FLASK/%E9%97%AE%E9%A2%98/" class="md-nav__link">
+      <a href="../%E9%97%AE%E9%A2%98/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2972,7 +2893,7 @@
   
   
     <li class="md-nav__item">
-      <a href="%E7%BC%96%E7%A8%8B/Python/GUI/QT/main/" class="md-nav__link">
+      <a href="../../GUI/QT/main/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3038,7 +2959,7 @@
   
   
     <li class="md-nav__item">
-      <a href="%E7%BC%96%E7%A8%8B/Python/GUI/Tkinter/Tkinter/" class="md-nav__link">
+      <a href="../../GUI/Tkinter/Tkinter/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3059,7 +2980,7 @@
   
   
     <li class="md-nav__item">
-      <a href="%E7%BC%96%E7%A8%8B/Python/GUI/Tkinter/%E7%94%A8tkinter%E5%86%99%E4%B8%80%E4%B8%AA%E6%B6%88%E6%81%AF%E5%BC%B9%E7%AA%97/" class="md-nav__link">
+      <a href="../../GUI/Tkinter/%E7%94%A8tkinter%E5%86%99%E4%B8%80%E4%B8%AA%E6%B6%88%E6%81%AF%E5%BC%B9%E7%AA%97/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3133,7 +3054,7 @@
   
   
     <li class="md-nav__item">
-      <a href="%E7%BC%96%E7%A8%8B/Python/Scrapy/note/" class="md-nav__link">
+      <a href="../../Scrapy/note/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3207,7 +3128,7 @@
   
   
     <li class="md-nav__item">
-      <a href="%E7%BC%96%E7%A8%8B/%E5%85%B6%E4%BB%96%E5%BC%80%E5%8F%91%E7%9F%A5%E8%AF%86/xampp%E5%88%9D%E5%AD%A6%E8%80%85%E6%80%8E%E6%A0%B7%E8%BF%90%E8%A1%8C%E4%B8%80%E4%B8%AA%E6%9C%AC%E5%9C%B0php%E6%96%87%E4%BB%B6/" class="md-nav__link">
+      <a href="../../../%E5%85%B6%E4%BB%96%E5%BC%80%E5%8F%91%E7%9F%A5%E8%AF%86/xampp%E5%88%9D%E5%AD%A6%E8%80%85%E6%80%8E%E6%A0%B7%E8%BF%90%E8%A1%8C%E4%B8%80%E4%B8%AA%E6%9C%AC%E5%9C%B0php%E6%96%87%E4%BB%B6/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3228,7 +3149,7 @@
   
   
     <li class="md-nav__item">
-      <a href="%E7%BC%96%E7%A8%8B/%E5%85%B6%E4%BB%96%E5%BC%80%E5%8F%91%E7%9F%A5%E8%AF%86/%E5%AE%89%E8%A3%85nodejs-npm-cnpm/" class="md-nav__link">
+      <a href="../../../%E5%85%B6%E4%BB%96%E5%BC%80%E5%8F%91%E7%9F%A5%E8%AF%86/%E5%AE%89%E8%A3%85nodejs-npm-cnpm/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3294,7 +3215,7 @@
   
   
     <li class="md-nav__item">
-      <a href="%E7%BC%96%E7%A8%8B/%E5%89%8D%E7%AB%AF/Javascript/" class="md-nav__link">
+      <a href="../../../%E5%89%8D%E7%AB%AF/Javascript/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3315,7 +3236,7 @@
   
   
     <li class="md-nav__item">
-      <a href="%E7%BC%96%E7%A8%8B/%E5%89%8D%E7%AB%AF/Nodejs/" class="md-nav__link">
+      <a href="../../../%E5%89%8D%E7%AB%AF/Nodejs/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3373,7 +3294,7 @@
   
   
     <li class="md-nav__item">
-      <a href="%E7%BC%96%E7%A8%8B/%E5%89%8D%E7%AB%AF/CSS%E6%95%99%E7%A8%8B/%E5%9F%BA%E7%A1%80/" class="md-nav__link">
+      <a href="../../../%E5%89%8D%E7%AB%AF/CSS%E6%95%99%E7%A8%8B/%E5%9F%BA%E7%A1%80/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3394,7 +3315,7 @@
   
   
     <li class="md-nav__item">
-      <a href="%E7%BC%96%E7%A8%8B/%E5%89%8D%E7%AB%AF/CSS%E6%95%99%E7%A8%8B/%E7%AC%AC%E4%B8%80%E4%B8%AA%E4%BE%8B%E5%AD%90/" class="md-nav__link">
+      <a href="../../../%E5%89%8D%E7%AB%AF/CSS%E6%95%99%E7%A8%8B/%E7%AC%AC%E4%B8%80%E4%B8%AA%E4%BE%8B%E5%AD%90/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3460,7 +3381,7 @@
   
   
     <li class="md-nav__item">
-      <a href="%E7%BC%96%E7%A8%8B/%E5%89%8D%E7%AB%AF/HTML%E6%95%99%E7%A8%8B/%E7%AC%AC%E4%B8%80%E4%B8%AA%E4%BE%8B%E5%AD%90/" class="md-nav__link">
+      <a href="../../../%E5%89%8D%E7%AB%AF/HTML%E6%95%99%E7%A8%8B/%E7%AC%AC%E4%B8%80%E4%B8%AA%E4%BE%8B%E5%AD%90/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3526,7 +3447,7 @@
   
   
     <li class="md-nav__item">
-      <a href="%E7%BC%96%E7%A8%8B/%E5%89%8D%E7%AB%AF/Uniapp/uniapp/" class="md-nav__link">
+      <a href="../../../%E5%89%8D%E7%AB%AF/Uniapp/uniapp/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3592,7 +3513,7 @@
   
   
     <li class="md-nav__item">
-      <a href="%E7%BC%96%E7%A8%8B/%E5%89%8D%E7%AB%AF/Vue/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/" class="md-nav__link">
+      <a href="../../../%E5%89%8D%E7%AB%AF/Vue/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3666,7 +3587,7 @@
   
   
     <li class="md-nav__item">
-      <a href="%E7%BC%96%E7%A8%8B/%E5%AE%89%E5%8D%93/%E6%88%AA%E5%9B%BE/" class="md-nav__link">
+      <a href="../../../%E5%AE%89%E5%8D%93/%E6%88%AA%E5%9B%BE/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3732,7 +3653,7 @@
   
   
     <li class="md-nav__item">
-      <a href="%E7%BC%96%E7%A8%8B/%E6%B1%87%E7%BC%96/80x86/" class="md-nav__link">
+      <a href="../../../%E6%B1%87%E7%BC%96/80x86/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3805,7 +3726,7 @@
   
   
     <li class="md-nav__item">
-      <a href="%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA/mkdocs/" class="md-nav__link">
+      <a href="../../../../%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA/mkdocs/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3863,7 +3784,7 @@
   
   
     <li class="md-nav__item">
-      <a href="%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA/hexo/%E5%AE%89%E8%A3%85hexo/" class="md-nav__link">
+      <a href="../../../../%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA/hexo/%E5%AE%89%E8%A3%85hexo/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3929,7 +3850,7 @@
   
   
     <li class="md-nav__item">
-      <a href="%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA/jekyll/GithubPage%E4%B8%8EJekyll/" class="md-nav__link">
+      <a href="../../../../%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA/jekyll/GithubPage%E4%B8%8EJekyll/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3950,7 +3871,7 @@
   
   
     <li class="md-nav__item">
-      <a href="%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA/jekyll/gitee%E4%BD%BF%E7%94%A8jekyll%E7%9A%84timemachine%E7%9A%84%E8%BF%87%E7%A8%8B/" class="md-nav__link">
+      <a href="../../../../%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA/jekyll/gitee%E4%BD%BF%E7%94%A8jekyll%E7%9A%84timemachine%E7%9A%84%E8%BF%87%E7%A8%8B/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3971,7 +3892,7 @@
   
   
     <li class="md-nav__item">
-      <a href="%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA/jekyll/%E6%9C%AC%E5%9C%B0%E4%BD%BF%E7%94%A8jekyll%28%E4%B8%BB%E8%A6%81%E7%94%A8%E4%BA%8E%E6%B5%8B%E8%AF%95%29/" class="md-nav__link">
+      <a href="../../../../%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA/jekyll/%E6%9C%AC%E5%9C%B0%E4%BD%BF%E7%94%A8jekyll%28%E4%B8%BB%E8%A6%81%E7%94%A8%E4%BA%8E%E6%B5%8B%E8%AF%95%29/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3992,7 +3913,7 @@
   
   
     <li class="md-nav__item">
-      <a href="%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA/jekyll/%E7%AC%AC%E4%B8%80%E6%AC%A1%E4%BD%BF%E7%94%A8jekyll%E7%9A%84%E9%85%8D%E7%BD%AE/" class="md-nav__link">
+      <a href="../../../../%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA/jekyll/%E7%AC%AC%E4%B8%80%E6%AC%A1%E4%BD%BF%E7%94%A8jekyll%E7%9A%84%E9%85%8D%E7%BD%AE/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4065,7 +3986,7 @@
   
   
     <li class="md-nav__item">
-      <a href="%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90/PCB%E8%BD%AF%E4%BB%B6/" class="md-nav__link">
+      <a href="../../../../%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90/PCB%E8%BD%AF%E4%BB%B6/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4086,7 +4007,7 @@
   
   
     <li class="md-nav__item">
-      <a href="%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90/%E5%A4%9A%E6%AC%BE%E5%85%8D%E8%B4%B9%E8%A7%86%E9%A2%91%E5%89%AA%E8%BE%91%E8%BD%AF%E4%BB%B6%E6%B1%87%E6%80%BB/" class="md-nav__link">
+      <a href="../../../../%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90/%E5%A4%9A%E6%AC%BE%E5%85%8D%E8%B4%B9%E8%A7%86%E9%A2%91%E5%89%AA%E8%BE%91%E8%BD%AF%E4%BB%B6%E6%B1%87%E6%80%BB/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4107,7 +4028,7 @@
   
   
     <li class="md-nav__item">
-      <a href="%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90/%E6%8A%95%E5%B1%8F%E7%A5%9E%E5%99%A8scrcpy%21%20%E4%BB%BB%E4%BD%95%E6%99%BA%E8%83%BD%E6%89%8B%E6%9C%BA%E9%83%BD%E8%83%BD%E6%8A%95%E5%B1%8F%E5%88%B0%E7%94%B5%E8%84%91%E4%B8%8A/" class="md-nav__link">
+      <a href="../../../../%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90/%E6%8A%95%E5%B1%8F%E7%A5%9E%E5%99%A8scrcpy%21%20%E4%BB%BB%E4%BD%95%E6%99%BA%E8%83%BD%E6%89%8B%E6%9C%BA%E9%83%BD%E8%83%BD%E6%8A%95%E5%B1%8F%E5%88%B0%E7%94%B5%E8%84%91%E4%B8%8A/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4146,68 +4067,6 @@
   
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      目录
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      寻找
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      公众号
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      音乐
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    <span class="md-ellipsis">
-      论坛
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
-    <span class="md-ellipsis">
-      软件下载
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
-    <span class="md-ellipsis">
-      联系方式
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -4225,29 +4084,34 @@
   
 
 
-  <h1>Home</h1>
+<div id="mkdocs-encrypted-content" style="display:none">JXz0yaybcsXud/r7uu1/ng==;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</div>
+<div id="mkdocs-decrypted-content">
+    <form id="mkdocs-decrypt-form" class="md-content__inner md-typeset">
+        <h1>This content is protected with AES encryption. </h1>
+        <p>Contact your administrator for access to this page.</p>
+        <input class="md-input" type="password" id="mkdocs-content-password" placeholder="Password" />
+        
+        <p id="mkdocs-decrypt-msg"></p>
+    </form>
+</div>
 
-<details class="note">
-<summary>一个不限于技术的博客</summary>
-</details>
-<h2 id="_1">寻找<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<ul>
-<li>微信小程序前端, 熟悉Color-UI (一个样式库而已, 会复制粘贴就行)</li>
-<li>Python后端, 会Django、Flask、FastApi其中一个就行</li>
-</ul>
-<p>目前在做微信小程序，有意向锻炼能力、合作的伙伴可以联系我</p>
-<h2 id="_2">公众号<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
-<p>极客森林</p>
-<h2 id="_3">音乐<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
-<p><a href="https://music.163.com/#/artist?id=35203458">开车去火星 - 歌手 - 网易云音乐 (163.com)</a></p>
-<h2 id="_4">论坛<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
-<p><a href="https://forum.sx3kj.top">森灵说说</a></p>
-<h2 id="_5">软件下载<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
-<p><a href="https://wwd.lanzout.com/b01nnxi6f">软件下载-密码4oo6</a></p>
-<h2 id="_6">联系方式<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
-<p><code>QQ</code>1628430840</p>
-<p><code>微信</code> fakeme99</p>
-<p><code>邮箱</code> <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#109;&#101;&#97;&#110;&#115;&#119;&#49;&#64;&#49;&#54;&#51;&#46;&#99;&#111;&#109;">&#109;&#101;&#97;&#110;&#115;&#119;&#49;&#64;&#49;&#54;&#51;&#46;&#99;&#111;&#109;</a></p>
+<script type="text/javascript">
+var encryptcontent_id = "encryptcontent_1";
+var encryptcontent_path = "%E7%BC%96%E7%A8%8B/Python/FLASK/sql/";
+var decryption_failure_message = "Invalid password.";
+var encryptcontent_keystore = ["vgo0UKH0ZJDgl7JpaaYkIw==;pI8R7xQo3XQn0hgPhwq7Jcn/17IebFGn1StY0PUYxmqvrwfVr3NSN7EWq8kRRue6AlIDrmrRa6gvjfjIA55inmQoD/FgB40GzFItGa4fsvRLdyssYfnkKTIhoZGDlXft;7ObstjrJitxdBS/YKVUW9w=="];
+var encryptcontent_obfuscate = 0;
+
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/core.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/enc-base64.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/cipher-core.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/sha256.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/hmac.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/pbkdf2.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/aes.js"></script>
+<script type="text/javascript" src="../../../../assets/javascripts/decrypt-contents.js" defer></script>
 
 
 
@@ -4292,9 +4156,27 @@
       aria-label="footer.title"
     >
       
+        <a
+          href="../bootstrap/"
+          class="md-footer__link md-footer__link--prev"
+          rel="prev"
+        >
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                上一页
+              </span>
+              [Protected] Bootstrap
+            </div>
+          </div>
+        </a>
+      
       
         <a
-          href="A%E5%BA%94%E7%94%A8-%E5%B7%A5%E5%85%B7/%E5%90%89%E4%BB%96%E6%8C%87%E6%9D%BF%E8%AE%AD%E7%BB%83%E5%8A%A9%E6%89%8B/"
+          href="../wtf/"
           class="md-footer__link md-footer__link--next"
           rel="next"
         >
@@ -4303,7 +4185,7 @@
               <span class="md-footer__direction">
                 下一页
               </span>
-              吉他指板训练助手
+              Wtf
             </div>
           </div>
           <div class="md-footer__button md-icon">
@@ -4339,16 +4221,16 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": ".", "features": [], "search": "assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
+    <script id="__config" type="application/json">{"base": "../../../..", "features": [], "search": "../../../../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
     
     
-      <script src="assets/javascripts/bundle.d7c377c4.min.js"></script>
+      <script src="../../../../assets/javascripts/bundle.d7c377c4.min.js"></script>
       
-        <script src="tongji/baidu-tongji.js"></script>
+        <script src="../../../../tongji/baidu-tongji.js"></script>
       
         <script src="https://unpkg.com/mermaid@8.8.4/dist/mermaid.min.js"></script>
       
-        <script src="assets/pymdownx-extras/extra-loader-MCFnu0Wd.js"></script>
+        <script src="../../../../assets/pymdownx-extras/extra-loader-MCFnu0Wd.js"></script>
       
     
   </body>
