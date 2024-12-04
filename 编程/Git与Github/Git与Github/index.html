@@ -953,27 +953,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../%E7%B3%BB%E7%BB%9F/Linux%E7%B3%BB%E7%BB%9F/shell%E4%B8%AD%E4%B8%8B%E8%BD%BD%E7%BC%96%E5%8F%B7%E4%B8%8D%E5%90%8C%E7%9A%84%E9%93%BE%E6%8E%A5/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    [Protected] Shell中下载编号不同的链接
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../../../%E7%B3%BB%E7%BB%9F/Linux%E7%B3%BB%E7%BB%9F/shell%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" class="md-nav__link">
         
   
@@ -1214,10 +1193,10 @@
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_14_1_18" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_14_1_17" >
         
           
-          <label class="md-nav__link" for="__nav_14_1_18" id="__nav_14_1_18_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_14_1_17" id="__nav_14_1_17_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -1228,8 +1207,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_14_1_18_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_14_1_18">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_14_1_17_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_14_1_17">
             <span class="md-nav__icon md-icon"></span>
             ArcoLinux
           </label>
@@ -2019,53 +1998,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../MySQL%E6%95%B0%E6%8D%AE%E5%BA%93/mysql%E6%95%B0%E6%8D%AE%E5%BA%93/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Mysql数据库
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../../MySQL%E6%95%B0%E6%8D%AE%E5%BA%93/%E5%AE%89%E8%A3%85phpmyadmin%20apache2.4%20php8%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
     安装phpmyadmin apache2.4 php8遇到的问题
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../MySQL%E6%95%B0%E6%8D%AE%E5%BA%93/%E7%9F%A5%E8%AF%86%E7%82%B9/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    知识点
   </span>
   
 
@@ -4610,8 +4547,8 @@
 
 <h1 id="githubssh">Github配置SSH<a class="headerlink" href="#githubssh" title="Permanent link">&para;</a></h1>
 <p>设置用户信息</p>
-<div class="highlight"><pre><span></span><code>git<span class="w"> </span>config<span class="w"> </span>user.name<span class="w"> </span><span class="s2">&quot;wdh99&quot;</span>
-git<span class="w"> </span>config<span class="w"> </span>user.email<span class="w"> </span><span class="s2">&quot;meansvv@163.com&quot;</span>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>user.name<span class="w"> </span><span class="s2">&quot;wdh99&quot;</span>
+git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>user.email<span class="w"> </span><span class="s2">&quot;meansvv@163.com&quot;</span>
 </code></pre></div>
 <h1 id="_1">其他<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
 <p>生成密钥</p>
@@ -4636,6 +4573,10 @@ git<span class="w"> </span>reset<span class="w"> </span>--soft<span class="w"> <
 <a href="https://blog.csdn.net/u014213012/article/details/104640094">https://blog.csdn.net/u014213012/article/details/104640094</a></p>
 <p>git pull失败,已经git fetch 了,但是遇到 unlink xxx等问题怎么撤销git pull恢复干净的工作区域?
 git reflog查看记录, 比如要恢复到fd41544, 执行这个命令<code>git reset --hard fd41544</code></p>
+<p>git rm -r --cached xxx   //xxx表示不再想版本控制的文件，然后在  .gitignore 文件中加入该忽略的文件 
+git add .
+git commit -m 'update .gitignore'
+git push -f //强制push</p>
 
 
 
@@ -4750,7 +4691,7 @@ git reflog查看记录, 比如要恢复到fd41544, 执行这个命令<code>git r
     
       <script src="../../../assets/javascripts/bundle.d7c377c4.min.js"></script>
       
-        <script src="../../../tongji/baidu-tongji.js"></script>
+        <script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
       
         <script src="https://unpkg.com/mermaid@8.8.4/dist/mermaid.min.js"></script>
       

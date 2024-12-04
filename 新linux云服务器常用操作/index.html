@@ -963,27 +963,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../%E7%B3%BB%E7%BB%9F/Linux%E7%B3%BB%E7%BB%9F/shell%E4%B8%AD%E4%B8%8B%E8%BD%BD%E7%BC%96%E5%8F%B7%E4%B8%8D%E5%90%8C%E7%9A%84%E9%93%BE%E6%8E%A5/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Shell中下载编号不同的链接
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../%E7%B3%BB%E7%BB%9F/Linux%E7%B3%BB%E7%BB%9F/shell%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" class="md-nav__link">
         
   
@@ -1224,10 +1203,10 @@
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_14_1_18" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_14_1_17" >
         
           
-          <label class="md-nav__link" for="__nav_14_1_18" id="__nav_14_1_18_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_14_1_17" id="__nav_14_1_17_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -1238,8 +1217,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_14_1_18_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_14_1_18">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_14_1_17_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_14_1_17">
             <span class="md-nav__icon md-icon"></span>
             ArcoLinux
           </label>
@@ -2015,53 +1994,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../%E7%BC%96%E7%A8%8B/MySQL%E6%95%B0%E6%8D%AE%E5%BA%93/mysql%E6%95%B0%E6%8D%AE%E5%BA%93/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Mysql数据库
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../%E7%BC%96%E7%A8%8B/MySQL%E6%95%B0%E6%8D%AE%E5%BA%93/%E5%AE%89%E8%A3%85phpmyadmin%20apache2.4%20php8%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
     安装phpmyadmin apache2.4 php8遇到的问题
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../%E7%BC%96%E7%A8%8B/MySQL%E6%95%B0%E6%8D%AE%E5%BA%93/%E7%9F%A5%E8%AF%86%E7%82%B9/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    知识点
   </span>
   
 
@@ -4686,9 +4623,9 @@ sudo<span class="w"> </span>systemctl<span class="w"> </span><span class="nb">en
 </code></pre></div>
 <h3 id="4-ssh">4. 配置 SSH 密钥认证（可选）<a class="headerlink" href="#4-ssh" title="Permanent link">&para;</a></h3>
 <p>如果你不希望每次使用密码登录，可以配置 SSH 密钥对认证。这里是如何操作的：</p>
-<h4 id="41-ssh">4.1 生成 SSH 密钥对<a class="headerlink" href="#41-ssh" title="Permanent link">&para;</a></h4>
+<h4 id="41-ssh-gitgithub">4.1 生成 SSH 密钥对(参考【编程-&gt;Git与Github】一文)<a class="headerlink" href="#41-ssh-gitgithub" title="Permanent link">&para;</a></h4>
 <p>在本地机器上（客户端），你可以使用 <code>ssh-keygen</code> 生成一个 SSH 密钥对：</p>
-<div class="highlight"><pre><span></span><code>ssh-keygen<span class="w"> </span>-t<span class="w"> </span>rsa<span class="w"> </span>-b<span class="w"> </span><span class="m">2048</span>
+<div class="highlight"><pre><span></span><code>ssh-keygen<span class="w"> </span>-t<span class="w"> </span>ed25519<span class="w"> </span>-C<span class="w"> </span><span class="s2">&quot;your_email@example.com&quot;</span>
 </code></pre></div>
 <p>默认情况下，生成的公钥和私钥存储在 <code>~/.ssh/id_rsa</code> 和 <code>~/.ssh/id_rsa.pub</code> 文件中。</p>
 <h4 id="42-sshauthorized_keys">4.2 将公钥添加到新用户的 <code>~/.ssh/authorized_keys</code> 文件中<a class="headerlink" href="#42-sshauthorized_keys" title="Permanent link">&para;</a></h4>
@@ -4762,6 +4699,109 @@ sudo<span class="w"> </span>certbot<span class="w"> </span>certonly<span class="
 <p>效果：</p>
 <p><img alt="" src="../%E6%96%B0linux%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C-assets/2024-11-19-18-42-54-image.png" /></p>
 <p>官网 <a href="https://goaccess.io/get-started">GoAccess - Get Started</a></p>
+<h1 id="python">python项目<a class="headerlink" href="#python" title="Permanent link">&para;</a></h1>
+<h2 id="gunicorn">gunicorn<a class="headerlink" href="#gunicorn" title="Permanent link">&para;</a></h2>
+<p>项目结构</p>
+<p><img alt="" src="../%E6%96%B0linux%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C-assets/2024-11-22-23-19-05-image.png" /></p>
+<p>结束所有包含gunicorn的进程
+<code>ps aux | grep gunicorn | awk '{print $2}' | xargs kill</code></p>
+<p>启动</p>
+<p>把下面代码写入run.sh文件</p>
+<p><code>venv/bin/python3 venv/bin/gunicorn  -c /www/wwwroot/api.sx3kj.top/gunicorn_conf.py api.asgi:application</code></p>
+<p>通过<code>nohup bash run.sh &amp;</code></p>
+<p>gunicorn_conf.py文件：</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># 项目目录</span>
+<span class="n">chdir</span> <span class="o">=</span> <span class="s1">&#39;/www/wwwroot/api.sx3kj.top&#39;</span>
+
+<span class="c1"># 指定进程数</span>
+<span class="n">workers</span> <span class="o">=</span> <span class="mi">4</span>
+
+<span class="c1"># 指定每个进程开启的线程数</span>
+<span class="n">threads</span> <span class="o">=</span> <span class="mi">2</span>
+
+<span class="c1">#启动用户</span>
+<span class="n">user</span> <span class="o">=</span> <span class="s1">&#39;www&#39;</span>
+
+<span class="c1"># 启动模式</span>
+<span class="n">worker_class</span> <span class="o">=</span> <span class="s1">&#39;uvicorn.workers.UvicornWorker&#39;</span>
+
+<span class="c1"># 绑定的ip与端口</span>
+<span class="n">bind</span> <span class="o">=</span> <span class="s1">&#39;0.0.0.0:8000&#39;</span>
+
+<span class="c1"># 设置进程文件目录（用于停止服务和重启服务，请勿删除）</span>
+<span class="n">pidfile</span> <span class="o">=</span> <span class="s1">&#39;/www/wwwroot/api.sx3kj.top/gunicorn.pid&#39;</span>
+
+<span class="c1"># 设置访问日志和错误信息日志路径</span>
+<span class="n">accesslog</span> <span class="o">=</span> <span class="s1">&#39;/www/wwwlogs/python/api_sx3kj_top/gunicorn_acess.log&#39;</span>
+<span class="n">errorlog</span> <span class="o">=</span> <span class="s1">&#39;/www/wwwlogs/python/api_sx3kj_top/gunicorn_error.log&#39;</span>
+
+<span class="c1"># 日志级别，这个日志级别指的是错误日志的级别，而访问日志的级别无法设置</span>
+<span class="c1"># debug:调试级别，记录的信息最多；</span>
+<span class="c1"># info:普通级别；</span>
+<span class="c1"># warning:警告消息；</span>
+<span class="c1"># error:错误消息；</span>
+<span class="c1"># critical:严重错误消息；</span>
+<span class="n">loglevel</span> <span class="o">=</span> <span class="s1">&#39;info&#39;</span> 
+
+<span class="c1"># 自定义设置项请写到该处</span>
+<span class="c1"># 最好以上面相同的格式 &lt;注释 + 换行 + key = value&gt; 进行书写， </span>
+<span class="c1"># PS: gunicorn 的配置文件是python扩展形式，即&quot;.py&quot;文件，需要注意遵从python语法，</span>
+<span class="c1"># 如：loglevel的等级是字符串作为配置的，需要用引号包裹起来</span>
+</code></pre></div>
+<p>uwsgi.ini</p>
+<div class="highlight"><pre><span></span><code><span class="k">[uwsgi]</span>
+<span class="c1">#项目目录</span>
+<span class="na">chdir</span><span class="o">=</span><span class="s">/www/wwwroot/api.sx3kj.top</span>
+
+<span class="c1">#指定项目application</span>
+<span class="na">wsgi-file</span><span class="o">=</span><span class="s">/www/wwwroot/api.sx3kj.top/api/asgi.py</span>
+
+<span class="c1">#python 程序内用以启动的application 变量名</span>
+<span class="na">callable</span><span class="o">=</span><span class="s">application</span>
+
+<span class="c1"># 进程个数</span>
+<span class="na">processes</span><span class="o">=</span><span class="s">4</span>
+
+<span class="c1"># 线程个数</span>
+<span class="na">threads</span><span class="o">=</span><span class="s">2</span>
+
+<span class="c1">#指定启动时的pid文件路径（用于停止服务和重启服务，请勿删除）</span>
+<span class="na">pidfile</span><span class="o">=</span><span class="s">/www/wwwroot/api.sx3kj.top/uwsgi.pid</span>
+
+<span class="c1"># 指定ip及端口</span>
+<span class="c1"># 默认http模式，可切换至socket模式</span>
+<span class="na">http</span><span class="o">=</span><span class="s">0.0.0.0:8080</span>
+<span class="c1">#socket=0.0.0.0:8080</span>
+
+<span class="c1">#启动uwsgi的用户名和用户组</span>
+<span class="na">uid</span><span class="o">=</span><span class="s">www</span>
+<span class="na">gid</span><span class="o">=</span><span class="s">www</span>
+
+<span class="c1">#启用主进程</span>
+<span class="na">master</span><span class="o">=</span><span class="s">true</span>
+
+<span class="c1"># 设置缓冲区大小</span>
+<span class="na">buffer-size</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">32768</span>
+
+<span class="c1"># 后台运行,并输出日志</span>
+<span class="na">daemonize</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">/www/wwwlogs/python/api_sx3kj_top/uwsgi.log</span>
+</code></pre></div>
+<p>启动不成功查看日志：</p>
+<p><code>tail /www/wwwlogs/python/api_sx3kj_top/gunicorn_error.log</code></p>
+<p>如果有类似错误</p>
+<div class="highlight"><pre><span></span><code>wdh99@iZ7xvfuhs2l3j7rycy5cjaZ:/www/wwwroot/api.sx3kj.top$<span class="w"> </span>tail<span class="w"> </span>/www/wwwlogs/python/api_sx3kj_top/gunicorn_error.log
+<span class="w">  </span>File<span class="w"> </span><span class="s2">&quot;/www/wwwroot/api.sx3kj.top/venv/lib/python3.12/site-packages/uvicorn/workers.py&quot;</span>,<span class="w"> </span>line<span class="w"> </span><span class="m">32</span>,<span class="w"> </span><span class="k">in</span><span class="w"> </span>__init__
+<span class="w">    </span>super<span class="o">()</span>.__init__<span class="o">(</span>*args,<span class="w"> </span>**kwargs<span class="o">)</span>
+<span class="w">  </span>File<span class="w"> </span><span class="s2">&quot;/www/wwwroot/api.sx3kj.top/venv/lib/python3.12/site-packages/gunicorn/workers/base.py&quot;</span>,<span class="w"> </span>line<span class="w"> </span><span class="m">65</span>,<span class="w"> </span><span class="k">in</span><span class="w"> </span>__init__
+<span class="w">    </span>self.tmp<span class="w"> </span><span class="o">=</span><span class="w"> </span>WorkerTmp<span class="o">(</span>cfg<span class="o">)</span>
+<span class="w">               </span>^^^^^^^^^^^^^^
+<span class="w">  </span>File<span class="w"> </span><span class="s2">&quot;/www/wwwroot/api.sx3kj.top/venv/lib/python3.12/site-packages/gunicorn/workers/workertmp.py&quot;</span>,<span class="w"> </span>line<span class="w"> </span><span class="m">29</span>,<span class="w"> </span><span class="k">in</span><span class="w"> </span>__init__
+<span class="w">    </span>util.chown<span class="o">(</span>name,<span class="w"> </span>cfg.uid,<span class="w"> </span>cfg.gid<span class="o">)</span>
+<span class="w">  </span>File<span class="w"> </span><span class="s2">&quot;/www/wwwroot/api.sx3kj.top/venv/lib/python3.12/site-packages/gunicorn/util.py&quot;</span>,<span class="w"> </span>line<span class="w"> </span><span class="m">164</span>,<span class="w"> </span><span class="k">in</span><span class="w"> </span>chown
+<span class="w">    </span>os.chown<span class="o">(</span>path,<span class="w"> </span>uid,<span class="w"> </span>gid<span class="o">)</span>
+PermissionError:<span class="w"> </span><span class="o">[</span>Errno<span class="w"> </span><span class="m">1</span><span class="o">]</span><span class="w"> </span>Operation<span class="w"> </span>not<span class="w"> </span>permitted:<span class="w"> </span><span class="s1">&#39;/tmp/wgunicorn-4f6txcjy&#39;</span>
+</code></pre></div>
+<p>请检查uwsgi.ini和gunicorn_conf.py的用户、组是否和当前用户一致</p>
 
 
 
@@ -4876,7 +4916,7 @@ sudo<span class="w"> </span>certbot<span class="w"> </span>certonly<span class="
     
       <script src="../assets/javascripts/bundle.d7c377c4.min.js"></script>
       
-        <script src="../tongji/baidu-tongji.js"></script>
+        <script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
       
         <script src="https://unpkg.com/mermaid@8.8.4/dist/mermaid.min.js"></script>
       
